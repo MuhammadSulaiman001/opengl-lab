@@ -29,4 +29,9 @@
 Active Solution Platform = x86, Platform = Win32, Check Build.
 
 ---
+Rebuild, run and you should get something like the following:
+
+![run](/res/run.gif)
+
+---
 <sup>[1]</sup> You can use whatever version you want! Personally, I use Visual Studio 2022
