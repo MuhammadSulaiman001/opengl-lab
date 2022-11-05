@@ -11,7 +11,7 @@
     3. Checkout {branch-name} branch: `git checkout {branch-name}`
 3. Don't hesitate to start a [disscussion](https://github.com/MuhammadSulaiman001/opengl-lab/discussions), open an issue and create pull requests..
 
-## Environmental Setup
+## Environment Setup
 
 Files can be found in [this folder](/setup%20files/)..
 
