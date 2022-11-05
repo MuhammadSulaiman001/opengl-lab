@@ -27,7 +27,7 @@ Files can be found in [this folder](/setup%20files/)..
 
 3. Copy the content from "setup files\dlls" to "C:\Windows\System32"
 
-## Configure Visual Studio<sup>[1]</sup>
+## Visual Studio<sup>[1]</sup> Configuration
 
 - Project Properties -> Linker -> Input 
 		-> Additional Dependencies 
