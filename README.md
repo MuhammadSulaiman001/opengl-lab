@@ -9,7 +9,7 @@
     1. Clone this repo: `git clone https://github.com/MuhammadSulaiman001/opengl-lab.git`
     2. List all available branches: `git branch -a`
     3. Checkout {branch-name} branch: `git checkout {branch-name}`
-3. Don't hesitate to start a [disscussion](https://github.com/MuhammadSulaiman001/opengl-lab/discussions), open an issue and create pull requests..
+3. Don't hesitate to start a [disscussion](https://github.com/MuhammadSulaiman001/opengl-lab/discussions), open an issue or create a pull requests..
 
 ## Environment Setup
 
