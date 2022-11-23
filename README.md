@@ -4,7 +4,8 @@
 
 ## Notes:
 
-1. There will be a ***separate branch for each lecture***
+1. There will be a ***separate branch for each lecture***, 
+   - Please, make sure to download the code for the new lecture before getting into the lab (I'll update the code 1-2 days before the lab day).
 2. **Useful [git](https://git-scm.com/download/win) commands**
     1. Clone this repo: `git clone https://github.com/MuhammadSulaiman001/opengl-lab.git`
     2. List all available branches: `git branch -a`
