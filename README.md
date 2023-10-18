@@ -16,7 +16,7 @@ cmake --version # verify cmake is installed
 git --version # verify git is installed
 # cd path\where\you\clone\opensource\projects
 git clone https://github.com/JoeyDeVries/LearnOpenGL
-cd LearnOpenGL\out # change directory
+mkdir build && cd build # create/move to build directory
 cmake .. # build the build system :)
 # cmake --build . # build all the projects, might take few minutes!
 cmake --build . --target 1.getting_started__2.1.hello_triangle # builds only this target
@@ -25,7 +25,7 @@ cd ..\bin\1.getting_started\Debug # move to output location
 # explorer.exe . # open in windows explorer!
 ```
 
-Now, you have built the sample and can run it, without writing code or opening visual studio at all.
+Now, you have built the sample and run it, without writing any C++ code or opening visual studio at all.
 
 ---
 
