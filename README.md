@@ -31,6 +31,6 @@ Now, you have built the sample and run it, without writing any C++ code or openi
 
 ## Next:
 
-1. [Learn C++](https://learn.microsoft.com/en-us/cpp/?view=msvc-170) and [Visual Studio for C++](https://learn.microsoft.com/en-us/cpp/get-started/tutorial-console-cpp?view=msvc-170)
+1. [Learn C++](https://learn.microsoft.com/en-us/cpp/cpp/?view=msvc-170) and [Visual Studio for C++](https://learn.microsoft.com/en-us/cpp/get-started/tutorial-console-cpp?view=msvc-170)
 2. [Learn OpenGL](https://learnopengl.com/Introduction).
 2. Learn the basics of Git and Powershell.
