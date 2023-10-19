@@ -3,6 +3,9 @@
 ## Start Quickly
 
 1. Install/Update [Visual studio 2022 - Community Edition](https://visualstudio.microsoft.com/downloads/)
+
+![vs2022-installer-workloads](./res/vs2022-installer-workloads.png)
+
 2. Install/Update CMake [(official site)](https://cmake.org/download/) (use the `.msi`)
 3. Install/Update Git [(official site)](https://git-scm.com/downloads)
 4. Install/Update Powershell [(Microsoft Store)](https://apps.microsoft.com/store/detail/powershell/9MZ1SNWT0N5D)
