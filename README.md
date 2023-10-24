@@ -31,7 +31,15 @@ cd ..\bin\1.getting_started\Debug # move to output location
 Now, you have built the sample and run it, without writing any C++ code or opening visual studio at all.
 
 ---
+NOTE:
+For terminals that do not support the '&&' operator, such as versions of PowerShell prior to version 7, you can use the following syntax to execute two commands sequentially:
 
+```powershell
+mkdir build; cd build
+```
+This will first create a directory named 'build', and then change the current directory to 'build'.
+
+---
 ## Next:
 
 1. [Learn C++](https://learn.microsoft.com/en-us/cpp/cpp/?view=msvc-170) and [Visual Studio for C++](https://learn.microsoft.com/en-us/cpp/build/projects-and-build-systems-cpp?view=msvc-170)
