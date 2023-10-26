@@ -19,6 +19,7 @@ cmake --version # verify cmake is installed
 git --version # verify git is installed
 # cd path\where\you\clone\opensource\projects
 git clone https://github.com/JoeyDeVries/LearnOpenGL
+cd LearnOpenGL
 mkdir build && cd build # create/move to build directory
 cmake .. # build the build system :)
 # cmake --build . # build all the projects, might take few minutes!
