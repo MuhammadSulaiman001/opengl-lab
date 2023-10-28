@@ -36,6 +36,6 @@ Now, you have built the sample and run it, without writing any C++ code or openi
 ## Next:
 
 1. [Learn C++](https://learn.microsoft.com/en-us/cpp/cpp/?view=msvc-170) and [Visual Studio for C++](https://learn.microsoft.com/en-us/cpp/build/projects-and-build-systems-cpp?view=msvc-170)
-   * GitHub repos: [CPP_Beginner_to_Expert](https://github.com/tridibsamanta/CPP_Beginner_to_Expert), [cpluspluscourse](https://github.com/hsf-training/cpluspluscourse) and [Cpp-Tutorial-Samples](https://github.com/sinairv/Cpp-Tutorial-Samples)
+   * GitHub repos: [CPP_Beginner_to_Expert](https://github.com/tridibsamanta/CPP_Beginner_to_Expert), [cpluspluscourse](https://github.com/hsf-training/cpluspluscourse), [Cpp-Tutorial-Samples](https://github.com/sinairv/Cpp-Tutorial-Samples) and [modern-cpp-tutorial](https://github.com/changkun/modern-cpp-tutorial)
 2. [Learn OpenGL](https://learnopengl.com/Introduction).
 3. Learn the basics of Git and Powershell.
