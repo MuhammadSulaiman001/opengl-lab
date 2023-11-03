@@ -118,9 +118,10 @@ Now, you have built the sample and run it, without writing any C++ code or openi
 - [More...](https://github.com/fffaraz/awesome-cpp)
 
 ## Awesome C++ applications (wanna see real-life projects?)
-- [Notepad++](https://github.com/notepad-plus-plus): World-Wide Text editor
+- [Notepad++](https://github.com/notepad-plus-plus/notepad-plus-plus): World-Wide Text editor
 - [Windows Calculater Application](https://github.com/microsoft/calculator/)
 - [LibreCAD](https://github.com/LibreCAD/LibreCAD): World-Wide CAD editor
+- [Qt](https://github.com/qt/qtbase/tree/dev)
 - [opencv](https://github.com/opencv/opencv): World-Wide Image processing library
 - [tesseract](https://github.com/tesseract-ocr/tesseract): World-Wide OCR library
 
@@ -130,20 +131,19 @@ Now, you have built the sample and run it, without writing any C++ code or openi
     - Output Directory: `$(ProjectDir)$(Platform)\$(Configuration)`
     - Temp Directory: `$(ProjectDir)$(Platform)\$(Configuration)\Temp`
 - Create `dependencies` directory at root directory (next to .sln file) to be shared for all projects
-    - Create dlls/libs/headers folders in it
+    - Create dlls/libs/headers folders inside it
 - Don't use vcpkg (unless if your developing using CMake)
 - Use Post-Build-Event to copy dll files and all other resources (ex. images/shaders/etc...) to output directory
     - Recommended: let the event call .ps1 script, which will run one/more commands.
     - Your app should run via .exe double click!
-- Let the application encapsulate all the needed resources in order to build it successfully on other machines
-    - Don't put .lib files, .h/.hpp files and .dll files in common directories (so git can't track these files).
+- Let the application encapsulates all needed resources in order to build it successfully on other machines
+    - Don't put .lib files, .h/.hpp files and .dll files in common directories (outside your solution).. git should track these files.
 - Don't just list .cpp/.h/etc.. files at project directory..
     - create src/headers/resources/scripts/shaders/etc.. directories, so you keep things organized as much as possible!
 
 
 ## Consuming libraries
 
-### Flavors
 Libaries can be found in different flavors, the common ones are:
 - Headers only (ex. glm)
 - Headers and sources (ex. glad, stb)
@@ -155,7 +155,7 @@ Libaries can be found in different flavors, the common ones are:
     - add a **relative path** to where these header files are.
 2. To tell VS where the implementation binaries are, go to:
     - Project properties -> Linker -> General -> Additional Library Directories, 
-    - add a relative path to .libs files added
+    - add a relative path to .libs files
 3. Tell the linker what libs you want to consume by adding their names in:
     - Code, via `#pragma comment(lib, "lib-name.lib")` 
     - Or: from Project properties -> Linker -> Input -> Additional Dependencies
