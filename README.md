@@ -106,12 +106,10 @@ Now, you have built the sample and run it, without writing any C++ code or openi
 - [OpenGL-Renderer](https://github.com/htmlboss/OpenGL-Renderer)
 - [raylib](https://github.com/raysan5/raylib)
 - [Glitter](https://github.com/Polytonic/Glitter): OpenGL project template with common dependencies.
-- [Another-Kawaii-Chip-8-Emulator](https://github.com/Red1C3/Another-Kawaii-Chip-8-Emulator): A Chip-8 emulator 
-- [the-ancient-tri](https://github.com/Red1C3/the-ancient-tri): A low level OpenGL render engine
-- [sprite-animation-example](https://github.com/Red1C3/sprite-animation-example): A simple sprites animator
-- [omni-directional-light-example](https://github.com/Red1C3/omni-directional-light-example): A simple single point light shadow mapping
-- [mirror-example](https://github.com/Red1C3/mirror-example): A simple mirror simulator
 - [More...](https://github.com/eug/awesome-opengl)
+
+## Awesome OpenGL developers
+- [Red1C3](https://github.com/Red1C3)
 
 ## Awesome C++ tutorials
 - [modern-cpp-tutorial](https://github.com/changkun/modern-cpp-tutorial)
@@ -151,21 +149,20 @@ Now, you have built the sample and run it, without writing any C++ code or openi
 - Don't just list .cpp/.h/etc.. files at project directory..
     - create src/headers/resources/scripts/shaders/etc.. directories, so you keep things organized as much as possible!
 
-
 ## Consuming libraries
 
 Libaries can be found in different flavors, the common ones are:
 - Headers only (ex. glm)
 - Headers and sources (ex. glad, stb)
 - Headers + Lib (ex. glfw)
-- Headers + Lib + DLL (ex. assimp)
+- Headers + Lib + DLL (ex. assimp, irrklang)
 
 1. To tell VS where the header files are (so you can `#include <>` them), go to:
     - Project properties -> C\C++ -> General -> Additional Include Directories, 
     - add a **relative path** to where these header files are.
 2. To tell VS where the implementation binaries are, go to:
     - Project properties -> Linker -> General -> Additional Library Directories, 
-    - add a relative path to .libs files
+    - add a **relative path** to .lib files
 3. Tell the linker what libs you want to consume by adding their names in:
     - Code, via `#pragma comment(lib, "lib-name.lib")` 
     - Or: from Project properties -> Linker -> Input -> Additional Dependencies
@@ -173,7 +170,7 @@ Libaries can be found in different flavors, the common ones are:
     - Move the source files to the project -> Solution Explorer -> Show Hidden Files -> Right click on the newly added source files -> Include In Project.
 5. For dll files, go to:
     - Project properties -> Build Events -> Post-Build-Event
-    - Trigger powershell to execute a .ps1 script that copyies the dlls to output directory (recommended)
+    - Trigger powershell to execute a .ps1 script that copies the dlls to output directory (recommended)
         - Check `LabDemos` project to see an example
     - Or: add `xcopy` command to copy the dlls to output directory
         - Check `LegacyDemo.Yuck` project to see an example
