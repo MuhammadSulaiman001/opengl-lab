@@ -48,7 +48,7 @@ Now, you have built the sample and run it, without writing any C++ code or openi
     - [Getting started with CMake](https://cmake.org/cmake/help/latest/guide/tutorial/A%20Basic%20Starting%20Point.html)
 
 ## Lectures' Reference
-- Articles on [learnopengl.com](www.learnopengl.com) are the main reference for this Lab.
+- Articles on [learnopengl.com](https://www.learnopengl.com) are the main reference for this Lab.
     - **Mainly:** Getting started, Lightining, Model Loading, Depth Testing and Blending.
     - Complementary: the remaining topics!
 
@@ -159,7 +159,8 @@ Libaries can be found in different flavors, the common ones are:
 3. Tell the linker what libs you want to consume by adding their names in:
     - Code, via `#pragma comment(lib, "lib-name.lib")` 
     - Or: from Project properties -> Linker -> Input -> Additional Dependencies
-4. For sources (c/c++ files), jsut add them to your project (right click on the files -> Include in project).
+4. For sources (c/c++ files), just add them to your project
+    - Move the source files to the project -> Solution Explorer -> Show Hidden Files -> Right click on the newly added source files -> Include In Project.
 5. For dll files, go to:
     - Project properties -> Build Events -> Post-Build-Event
     - Trigger powershell to execute a .ps1 script that copyies the dlls to output directory (recommended)

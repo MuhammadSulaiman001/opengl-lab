@@ -8,9 +8,9 @@
 	- Advanced -> Charachter Set = "Use Multi-Byte"
 	- C/C++ -> Preprocessor -> preprocessor Definitions = _CRT_SECURE_NO_WARNINGS added
     - OutputPath/Temp Path Changed
-    - Post build event to copy DATA added
+    - Post build event to copy resources added
 - Note: x64 configuration removed, as .lib is built under x86 configuration
 
 ## Demo (Rebuild/Run)
 
-![Demo](res/demo.gif)
+![Demo](/OpenGLab/LegacyDemo.Yuck/res/demo.gif)
