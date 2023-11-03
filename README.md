@@ -72,7 +72,7 @@ Now, you have built the sample and run it, without writing any C++ code or openi
 - **We won't use [vcpkg](https://vcpkg.io/)** during this course.
 
 ## Awesome OpenGL Games:
-- [AntWar](https://github.com/YamanQD/AntWare/): Damascus university project 2021-2022
+- [AntWare](https://github.com/YamanQD/AntWare/): Damascus university project 2021-2022
 - [AntiAnts](https://github.com/HasanMothaffar/AntiAnts): Damascus university project 2021-2022
 - [Pepsico-man](https://github.com/Abd-ELrahmanHamza/Pepsico-man): University project
 - [Super mario](https://github.com/Deathmajorasmask/MarioRPG-OpenGL)
@@ -106,6 +106,11 @@ Now, you have built the sample and run it, without writing any C++ code or openi
 - [OpenGL-Renderer](https://github.com/htmlboss/OpenGL-Renderer)
 - [raylib](https://github.com/raysan5/raylib)
 - [Glitter](https://github.com/Polytonic/Glitter): OpenGL project template with common dependencies.
+- [Another-Kawaii-Chip-8-Emulator](https://github.com/Red1C3/Another-Kawaii-Chip-8-Emulator): A Chip-8 emulator 
+- [the-ancient-tri](https://github.com/Red1C3/the-ancient-tri): A low level OpenGL render engine
+- [sprite-animation-example](https://github.com/Red1C3/sprite-animation-example): A simple sprites animator
+- [omni-directional-light-example](https://github.com/Red1C3/omni-directional-light-example): A simple single point light shadow mapping
+- [mirror-example](https://github.com/Red1C3/mirror-example): A simple mirror simulator
 - [More...](https://github.com/eug/awesome-opengl)
 
 ## Awesome C++ tutorials
