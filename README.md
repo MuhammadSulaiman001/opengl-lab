@@ -67,7 +67,7 @@ Now, you have built the sample and run it, without writing any C++ code or openi
 - **We won't use [vcpkg](https://vcpkg.io/)** during this course.
 
 ## Awesome OpenGL Games:
-- [AntWar](https://github.com/YamanQD/AntWare/): Damascus university project 2021-2022
+- [AntWare](https://github.com/YamanQD/AntWare/): Damascus university project 2021-2022
 - [AntiAnts](https://github.com/HasanMothaffar/AntiAnts): Damascus university project 2021-2022
 - [Pepsico-man](https://github.com/Abd-ELrahmanHamza/Pepsico-man): University project
 - [Super mario](https://github.com/Deathmajorasmask/MarioRPG-OpenGL)
