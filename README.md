@@ -36,7 +36,12 @@ cd ..\bin\1.getting_started\Debug # move to output location
 Now, you have built the sample and run it, without writing any C++ code or opening visual studio at all.
 
 ---
-
+## OpenGLab
+- [LabDemos](./OpenGLab/LabDemos): Misc. Samples
+- [LegacyDemo.Yuck](./OpenGLab/LegacyDemo.Yuck): Showcase of legacy opengl code (note that you can host modern/legacy projects in the same solution)
+- [LabDemos.Test](./OpenGLab/LabDemos.Test): Unit Tests + Some TODOs
+- [LabDemos.Exercises](./): Coming soon...
+    
 ## Next:
 
 1. [Get familiar with the build system and the IDE](https://learn.microsoft.com/en-us/cpp/build/projects-and-build-systems-cpp?view=msvc-170)
@@ -94,8 +99,8 @@ Now, you have built the sample and run it, without writing any C++ code or openi
 - [ogldev](https://github.com/emeiri/ogldev)
 - [Learn-OpenGL](https://github.com/PacktPublishing/Learn-OpenGL): by Packt
 - [OpenGL-3D-Game-Tutorial-Series](https://github.com/PardCode/OpenGL-3D-Game-Tutorial-Series)
-- ~~[deprecated][nehe-opengl](https://github.com/gamedev-net/nehe-opengl): legacy OpenGL~~
-- ~~[deprecated][opengl-demos](https://github.com/Dovyski/opengl-demos/): legacy OpenGL~~
+- ~~[nehe-opengl](https://github.com/gamedev-net/nehe-opengl): legacy OpenGL~~
+- ~~[opengl-demos](https://github.com/Dovyski/opengl-demos/): legacy OpenGL~~
 
 ## Other OpenGL Awesomes!
 - [OpenGL-Renderer](https://github.com/htmlboss/OpenGL-Renderer)
