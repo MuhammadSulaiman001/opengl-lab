@@ -40,3 +40,14 @@ Now, you have built the sample and run it, without writing any C++ code or openi
    * [awesome-cpp](https://github.com/fffaraz/awesome-cpp)
 2. [Learn OpenGL](https://learnopengl.com/Introduction).
 3. Learn the basics of Git and Powershell.
+
+---
+
+## Best Practices:
+
+- Edit C++ project properties for all configurations (debug/release) and all platforms (x86, x64)
+    - Output Directory: `$(ProjectDir)$(Platform)\$(Configuration)`
+    - Temp Directory: `$(ProjectDir)$(Platform)\$(Configuration)\Temp`
+- Create `dependencies` directory at solution scope, create dlls/libs/headers folders in it.
+-
+
