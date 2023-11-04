@@ -73,7 +73,6 @@ Now, you have built the sample and run it, without writing any C++ code or openi
 
 ## Awesome OpenGL Games:
 - [AntWare](https://github.com/YamanQD/AntWare/): Damascus university project 2021-2022
-- [AntiAnts](https://github.com/HasanMothaffar/AntiAnts): Damascus university project 2021-2022
 - [Pepsico-man](https://github.com/Abd-ELrahmanHamza/Pepsico-man): University project
 - [Super mario](https://github.com/Deathmajorasmask/MarioRPG-OpenGL)
 - [SolarSystem-3D](https://github.com/GTruf/SolarSystem-3D): just a scene!
