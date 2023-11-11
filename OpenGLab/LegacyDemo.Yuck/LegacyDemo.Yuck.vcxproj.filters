@@ -4,64 +4,22 @@
     <Text Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{414639d2-0214-4098-a34e-506f69a82e92}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{5065a8df-6bc5-4573-89d9-bd6eded4f79e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files">
+    <Filter Include="Abstraction">
       <UniqueIdentifier>{9fb0bf55-8535-40fc-aca9-05b31f4a3184}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation">
+      <UniqueIdentifier>{5065a8df-6bc5-4573-89d9-bd6eded4f79e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Data\BlueFace.tga">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Data\Bucket.tga">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Data\Coke.tga">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Data\Crosshair.tga">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Data\Explode.tga">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Data\Font.tga">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Data\Ground.tga">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Data\Sky.tga">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Data\Target.tga">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Data\Vase.tga">
-      <Filter>Resource Files</Filter>
-    </Image>
-  </ItemGroup>
-  <ItemGroup>
-    <Media Include="Data\Shot.wav">
-      <Filter>Resource Files</Filter>
-    </Media>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="src\main.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="implementation\NeHeGL.cpp">
+      <Filter>Implementation</Filter>
     </ClCompile>
-    <ClCompile Include="src\NeHeGL.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="headers\NeHeGL.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="abstraction\NeHeGL.h">
+      <Filter>Abstraction</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

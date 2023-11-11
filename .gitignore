@@ -361,3 +361,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+TODOs.txt
+NOTEs.txt
+/OpenGLab/LabDemos/imgui.ini

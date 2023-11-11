@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Tests\CppTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\ExternalToolsTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\OpenGlUtilsTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\ThirdPartyLibsTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Configuration\Constants.cpp">
+      <Filter>Configurations</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\CppTests2.cpp" />
+    <ClCompile Include="Configuration\pch.cpp">
+      <Filter>Configurations</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{24248858-237b-4b9f-b423-5957404cccb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Configurations">
+      <UniqueIdentifier>{6e2e6cb5-1854-4407-aa50-a205a4603f1e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Configuration\pch.h">
+      <Filter>Configurations</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

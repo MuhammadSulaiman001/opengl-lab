@@ -14,26 +14,11 @@
     <Text Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Data\BlueFace.tga" />
-    <Image Include="Data\Bucket.tga" />
-    <Image Include="Data\Coke.tga" />
-    <Image Include="Data\Crosshair.tga" />
-    <Image Include="Data\Explode.tga" />
-    <Image Include="Data\Font.tga" />
-    <Image Include="Data\Ground.tga" />
-    <Image Include="Data\Sky.tga" />
-    <Image Include="Data\Target.tga" />
-    <Image Include="Data\Vase.tga" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="implementation\NeHeGL.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Media Include="Data\Shot.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\NeHeGL.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="headers\NeHeGL.h" />
+    <ClInclude Include="abstraction\NeHeGL.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -82,16 +67,17 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>.\dependencies\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\abstraction;.\dependencies\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>.\dependencies\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>GLU32.LIB;OPENGL32.LIB;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy "$(ProjectDir)Data" "$(OutputPath)Data" /Y /I /E</Command>
+      <Command>xcopy "$(ProjectDir)res" "$(OutputPath)res" /Y /I /E</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -102,7 +88,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>.\dependencies\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\abstraction;.\dependencies\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -110,10 +97,10 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>.\dependencies\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>GLU32.LIB;OPENGL32.LIB;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy "$(ProjectDir)Data" "$(OutputPath)Data" /Y /I /E</Command>
+      <Command>xcopy "$(ProjectDir)res" "$(OutputPath)res" /Y /I /E</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

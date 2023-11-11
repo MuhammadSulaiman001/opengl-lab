@@ -30,8 +30,12 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Googletest installer
-      uses: MarkusJx/googletest-installer@v1.1.1
+    # NOTE: I've excluded gtest project from being built in release configs
+    # TODO: re-include gtest in release mode
+    # TODO: run gtest in on remote
+    # the following did not work!
+    # - name: Googletest installer
+    #  uses: MarkusJx/googletest-installer@v1.1.1
       
     - name: Add MSBuild to PATH
       uses: microsoft/setup-msbuild@v1.0.2

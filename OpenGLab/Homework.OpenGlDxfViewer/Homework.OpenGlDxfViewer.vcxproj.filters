@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Abstraction">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Implementation">
+      <UniqueIdentifier>{7e162c00-331a-40cb-aadc-249cabb49976}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\implementation\DxfParser.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libdxfrw\dx_interface.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\abstraction\Entity2D.h">
+      <Filter>Abstraction</Filter>
+    </ClInclude>
+    <ClInclude Include="src\abstraction\DxfParser.h">
+      <Filter>Abstraction</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libdxfrw\dx_data.h">
+      <Filter>Abstraction</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libdxfrw\dx_interface.h">
+      <Filter>Abstraction</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
+</Project>

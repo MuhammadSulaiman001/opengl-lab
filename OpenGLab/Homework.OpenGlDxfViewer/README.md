@@ -1,0 +1,1 @@
+Run dxfviewer from cli, from .exe, 

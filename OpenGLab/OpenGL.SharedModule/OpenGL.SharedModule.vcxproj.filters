@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\imgui\imgui.cpp">
+      <Filter>ImGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\imgui\imgui_demo.cpp">
+      <Filter>ImGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\imgui\imgui_draw.cpp">
+      <Filter>ImGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\imgui\imgui_impl_glfw.cpp">
+      <Filter>ImGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\imgui\imgui_impl_opengl3.cpp">
+      <Filter>ImGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\imgui\imgui_stdlib.cpp">
+      <Filter>ImGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\imgui\imgui_tables.cpp">
+      <Filter>ImGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\imgui\imgui_widgets.cpp">
+      <Filter>ImGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\abstraction\Drawer.ixx">
+      <Filter>Abstraction</Filter>
+    </ClCompile>
+    <ClCompile Include="src\abstraction\OpenGlShape.ixx">
+      <Filter>Abstraction</Filter>
+    </ClCompile>
+    <ClCompile Include="src\abstraction\SharedModule.ixx">
+      <Filter>Abstraction</Filter>
+    </ClCompile>
+    <ClCompile Include="src\implementation\Drawer.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\implementation\OpenGlShape.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glad.c">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stb_image.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImGuiFileDialog.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\implementation\SharedModule.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Implementation">
+      <UniqueIdentifier>{3d068a91-8a11-4a9a-9a99-0dd686af8713}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Abstraction">
+      <UniqueIdentifier>{1966b9a2-f1b1-4c10-bcad-9fa887f7289e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGUI">
+      <UniqueIdentifier>{d418ff60-55c7-4b14-8f8e-fbcb406ed23d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc">
+      <UniqueIdentifier>{6881f4e1-dc5b-4a4f-9793-4b3be7f82506}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\imgui\imgui.natstepfilter">
+      <Filter>ImGUI</Filter>
+    </None>
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="src\imgui\imgui.natvis">
+      <Filter>ImGUI</Filter>
+    </Natvis>
+  </ItemGroup>
+</Project>

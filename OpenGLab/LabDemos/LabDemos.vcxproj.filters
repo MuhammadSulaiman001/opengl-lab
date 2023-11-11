@@ -1,31 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="Shaders">
       <UniqueIdentifier>{40fd2684-c4ba-4ec4-b91b-52c20ee2d1e6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Modules">
+      <UniqueIdentifier>{8436e62d-0bb4-4b7c-8e83-4a159d6b4851}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Samples">
+      <UniqueIdentifier>{9468c7bf-3639-4904-9fb4-4532e8a21d72}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\main.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\abstraction\Sample.ixx">
+      <Filter>Modules</Filter>
     </ClCompile>
-    <ClCompile Include="src\glad.c">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\samples\FreeCamera.cpp">
+      <Filter>Samples</Filter>
     </ClCompile>
-    <ClCompile Include="src\stb_image.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\samples\JustGlfwWindow.cpp">
+      <Filter>Samples</Filter>
+    </ClCompile>
+    <ClCompile Include="src\samples\HelloTriangle.cpp">
+      <Filter>Samples</Filter>
+    </ClCompile>
+    <ClCompile Include="src\samples\HelloTexture.cpp">
+      <Filter>Samples</Filter>
+    </ClCompile>
+    <ClCompile Include="src\samples\HelloOopTriangle.cpp">
+      <Filter>Samples</Filter>
+    </ClCompile>
+    <ClCompile Include="src\samples\CircleVsDisk.cpp">
+      <Filter>Samples</Filter>
+    </ClCompile>
+    <ClCompile Include="src\samples\GlfwWindowWithButton.cpp">
+      <Filter>Samples</Filter>
+    </ClCompile>
+    <ClCompile Include="src\samples\HelloPrimitives.cpp">
+      <Filter>Samples</Filter>
+    </ClCompile>
+    <ClCompile Include="src\samples\OpenFileDialog.cpp">
+      <Filter>Samples</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -35,13 +55,26 @@
     <None Include="shaders\main.vs">
       <Filter>Shaders</Filter>
     </None>
+    <None Include="shaders\bypass.vs">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\bypass.fs">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\bypass.texture.fs">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\bypass.texture.vs">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="resources\awesomeface.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resources</Filter>
     </Image>
     <Image Include="resources\container.jpg">
-      <Filter>Resource Files</Filter>
+      <Filter>Resources</Filter>
     </Image>
   </ItemGroup>
 </Project>
