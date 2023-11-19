@@ -6,7 +6,7 @@ We'll use the most-up-to-date tools to build/develop C++ projects:
 
 1. Install/Update [Visual studio 2022 - Community Edition](https://visualstudio.microsoft.com/downloads/)
 
-![vs2022-installer-workloads](./res/vs2022-installer-workloads.png)
+![vs2022-installer-workloads](./../res/vs2022-installer-workloads.png)
 
 2. Install/Update CMake [(official site)](https://cmake.org/download/) (use the `.msi`)
 3. Install/Update Git [(official site)](https://git-scm.com/downloads)

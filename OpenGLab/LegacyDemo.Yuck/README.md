@@ -16,4 +16,4 @@
 
 ## Demo (Rebuild/Run)
 
-![Demo, path should be relative to repo root](./res/demo.gif)
+![Demo, path should be relative to repo root](./../../res/demo.gif)

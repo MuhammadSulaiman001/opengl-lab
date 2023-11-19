@@ -17,7 +17,7 @@ Each project has `README.md` file, here is a brief description about them:
     - To watch all activities on this repo, select "All Activity" in Watch dropdown in the repo.
 - [UnitTests](./OpenGLab/UnitTests): Unit Tests everywhere[^1] :100:
 
-![projects-dependency-diagram](./res/projects-dependency-diagram.png)
+![projects-dependency-diagram](./../res/projects-dependency-diagram.png)
 
 NOTEs: 
 - To make changes to the code (ex. for do exercises and homeworks), I recommend you create new local branchand keep the master branch clean (to avoid code conflicts when pulling changes from remote).

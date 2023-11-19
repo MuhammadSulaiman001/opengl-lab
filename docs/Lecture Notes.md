@@ -46,7 +46,7 @@
         - reads 3 points to create a triangle, then for every new point, a new triangle is created using the point, the previous point and the first point
     - See Premitives exercise in `LabDemos.Exercises` project
 
-![Premitives](./res/primitives.png)
+![Premitives](./../res/primitives.png)
 
 - The glClearColor function is a state-setting function and glClear is a state-using function
 
