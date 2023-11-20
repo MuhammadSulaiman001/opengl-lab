@@ -7,6 +7,9 @@
 
 module Sample;
 
+extern const int SCR_WIDTH;
+extern const int SCR_HEIGHT;
+
 namespace HelloTriangle
 {
 	void processInput(GLFWwindow* window)
@@ -18,11 +21,11 @@ namespace HelloTriangle
 	int main()
 	{
 		glfwInit();
-		GLFWwindow* window = glfwCreateWindow(800, 600, "LearnOpenGL", NULL, NULL);
+		GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
 		glfwMakeContextCurrent(window);
 		gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
 
-		Shader ourShader("./shaders/bypass.vs", "./shaders/bypass.fs");
+		Shader ourShader("./shaders/vs/bypass-color.vs", "./shaders/fs/accept-color.fs");
 
 		float vertices[] = {
 			// positions         // colors

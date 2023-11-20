@@ -26,7 +26,23 @@ export namespace HelloTriangle {
 	int main();
 }
 
-export namespace HelloOopTriangle {
+export namespace HelloTriangle_Oop {
+	int main();
+}
+
+export namespace HelloTriangle_ProjectionViewModel {
+	int main();
+}
+
+export namespace HelloTriangle_Perspective {
+	int main();
+}
+
+export namespace HelloTriangle_Ortho {
+	int main();
+}
+
+export namespace RotateByWASD {
 	int main();
 }
 

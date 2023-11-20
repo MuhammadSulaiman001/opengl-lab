@@ -9,6 +9,9 @@
 
 module Sample;
 
+extern const int SCR_WIDTH;
+extern const int SCR_HEIGHT;
+
 namespace GlfwWindowWithButton
 {
 	void setup_ImGUI(GLFWwindow* window);
@@ -19,7 +22,7 @@ namespace GlfwWindowWithButton
 	{
 		glfwInit();
 
-		GLFWwindow* window = glfwCreateWindow(800, 600, "LearnOpenGL", NULL, NULL);
+		GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
 		glfwMakeContextCurrent(window);
 		gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
 

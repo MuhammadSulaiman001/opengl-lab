@@ -32,7 +32,7 @@
     <ClCompile Include="src\samples\HelloTexture.cpp">
       <Filter>Samples</Filter>
     </ClCompile>
-    <ClCompile Include="src\samples\HelloOopTriangle.cpp">
+    <ClCompile Include="src\samples\HelloTriangle.Oop.cpp">
       <Filter>Samples</Filter>
     </ClCompile>
     <ClCompile Include="src\samples\CircleVsDisk.cpp">
@@ -47,27 +47,51 @@
     <ClCompile Include="src\samples\OpenFileDialog.cpp">
       <Filter>Samples</Filter>
     </ClCompile>
+    <ClCompile Include="src\samples\HelloTriangle.ProjectionViewModel.cpp">
+      <Filter>Samples</Filter>
+    </ClCompile>
+    <ClCompile Include="src\samples\HelloTriangle.Perspective.cpp">
+      <Filter>Samples</Filter>
+    </ClCompile>
+    <ClCompile Include="src\samples\HelloTriangle.Ortho.cpp">
+      <Filter>Samples</Filter>
+    </ClCompile>
+    <ClCompile Include="src\samples\.constants.cpp">
+      <Filter>Samples</Filter>
+    </ClCompile>
+    <ClCompile Include="src\samples\RotateByWASD.cpp">
+      <Filter>Samples</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="shaders\main.fs">
+    <None Include="shaders\fs\accept-2-textures.fs">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="shaders\main.vs">
+    <None Include="shaders\vs\transform.vs">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="shaders\bypass.vs">
+    <None Include="shaders\vs\bypass.vs">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="shaders\bypass.fs">
+    <None Include="shaders\fs\red.fs">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="shaders\bypass.texture.fs">
+    <None Include="shaders\fs\accept-1-texture.fs">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="shaders\bypass.texture.vs">
+    <None Include="shaders\vs\bypass-texture.vs">
       <Filter>Shaders</Filter>
     </None>
     <None Include="README.md" />
+    <None Include="shaders\vs\bypass-color.vs">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\fs\accept-color.fs">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\vs\transform-no-tex.vs">
+      <Filter>Shaders</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="resources\awesomeface.png">

@@ -14,6 +14,9 @@ module Sample;
 
 using namespace std;
 
+extern const int SCR_WIDTH;
+extern const int SCR_HEIGHT;
+
 namespace HelloPrimitives
 {
 	vector<glm::vec3> shift(vector<glm::vec3> vertices, glm::vec3 offset)
@@ -27,10 +30,10 @@ namespace HelloPrimitives
 	int main()
 	{
 		glfwInit();
-		GLFWwindow* window = glfwCreateWindow(800, 600, "LearnOpenGL", NULL, NULL);
+		GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
 		glfwMakeContextCurrent(window);
 		gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
-		Shader ourShader("./shaders/bypass.vs", "./shaders/bypass.fs");
+		Shader ourShader("./shaders/vs/bypass.vs", "./shaders/fs/red.fs");
 
 		const vector data{
 			glm::vec3(-0.10f, -0.25f, 0.0f), // bottom-left

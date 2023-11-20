@@ -15,49 +15,34 @@ module Sample;
 
 using namespace std;
 
+extern const int SCR_WIDTH;
+extern const int SCR_HEIGHT;
+
 namespace CircleVsDisk
 {
-	std::vector<glm::vec3> createCirclePoints(glm::vec3 center, float radius, int num_of_segments)
-	{
-		std::vector<glm::vec3> circlePoints;
-
-		for (int i = 0; i <= num_of_segments; i++)
-		{
-			auto theta = (static_cast<float>(i)  / num_of_segments) * (2.0f * glm::pi<float>());
-			auto x = center.x + radius * glm::cos(theta);
-			auto y = center.y + radius * glm::sin(theta);
-			circlePoints.push_back(glm::vec3(x, y, center.z));
-		}
-
-		return circlePoints;
-	}
-
-	vector<glm::vec3> shift(vector<glm::vec3> vertices, glm::vec3 offset)
-	{
-		for (auto& vertex : vertices) vertex = vertex + offset;
-		return vertices;
-	}
-
+	std::vector<glm::vec3> create_circle_points(glm::vec3 center, float radius, int num_of_segments);
+	vector<glm::vec3> shift(vector<glm::vec3> vertices, glm::vec3 offset);
 	Drawer drawer;
 
 	int main()
 	{
 		glfwInit();
-		GLFWwindow* window = glfwCreateWindow(800, 600, "LearnOpenGL", NULL, NULL);
+		GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
 		glfwMakeContextCurrent(window);
 		gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
-		Shader ourShader("./shaders/bypass.vs", "./shaders/bypass.fs");
+
+		Shader ourShader("./shaders/vs/bypass.vs", "./shaders/fs/red.fs");
 
 		auto center = glm::vec3(0, 0, 0);
 		auto radius = 0.25f;
 		auto num_of_segments = 120;
 
-		auto circle1_vertices = createCirclePoints(center, radius, num_of_segments);
+		auto circle1_vertices = create_circle_points(center, radius, num_of_segments);
 		auto shift_offset = glm::vec3(-0.5, 0, 0);
 		circle1_vertices = shift(circle1_vertices, shift_offset);
 		OpenGlShape circle(circle1_vertices, GL_LINE_STRIP);
 
-		auto circle2_vertices = createCirclePoints(center, radius, num_of_segments);
+		auto circle2_vertices = create_circle_points(center, radius, num_of_segments);
 		shift_offset = glm::vec3(0.5, 0, 0);
 		circle2_vertices = shift(circle2_vertices, shift_offset);
 		// We'll use GL_TRIANGLE_FAN mode to draw a disk, so we need to put the center of the fan as first point
@@ -79,5 +64,28 @@ namespace CircleVsDisk
 		}
 		glfwTerminate();
 		return 0;
+	}
+
+	std::vector<glm::vec3> create_circle_points(glm::vec3 center, float radius, int num_of_segments)
+	{
+		std::vector<glm::vec3> circlePoints;
+		auto aspect_ratio = static_cast<float>(SCR_WIDTH) / static_cast<float>(SCR_HEIGHT);
+
+		for (int i = 0; i <= num_of_segments; i++)
+		{
+			// the first theta will be 0, the last theta will be 2*PI
+			auto theta = (static_cast<float>(i) / num_of_segments) * (2.0f * glm::pi<float>());
+			auto x = center.x + radius * glm::cos(theta);
+			auto y = center.y + radius * glm::sin(theta);
+			circlePoints.push_back(glm::vec3(x, y * aspect_ratio, center.z));
+		}
+
+		return circlePoints;
+	}
+
+	vector<glm::vec3> shift(vector<glm::vec3> vertices, glm::vec3 offset)
+	{
+		for (auto& vertex : vertices) vertex = vertex + offset;
+		return vertices;
 	}
 }

@@ -171,6 +171,8 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\samples\.constants.cpp" />
+    <ClCompile Include="src\samples\HelloTriangle.ProjectionViewModel.cpp" />
     <ClCompile Include="src\samples\FreeCamera.cpp" />
     <ClCompile Include="src\abstraction\Sample.ixx">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCppModule</CompileAs>
@@ -181,21 +183,27 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="src\samples\CircleVsDisk.cpp" />
     <ClCompile Include="src\samples\GlfwWindowWithButton.cpp" />
-    <ClCompile Include="src\samples\HelloOopTriangle.cpp" />
+    <ClCompile Include="src\samples\HelloTriangle.Oop.cpp" />
+    <ClCompile Include="src\samples\HelloTriangle.Perspective.cpp" />
+    <ClCompile Include="src\samples\HelloTriangle.Ortho.cpp" />
     <ClCompile Include="src\samples\HelloPrimitives.cpp" />
     <ClCompile Include="src\samples\HelloTexture.cpp" />
     <ClCompile Include="src\samples\HelloTriangle.cpp" />
     <ClCompile Include="src\samples\JustGlfwWindow.cpp" />
     <ClCompile Include="src\samples\OpenFileDialog.cpp" />
+    <ClCompile Include="src\samples\RotateByWASD.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
-    <None Include="shaders\bypass.fs" />
-    <None Include="shaders\bypass.texture.fs" />
-    <None Include="shaders\bypass.texture.vs" />
-    <None Include="shaders\bypass.vs" />
-    <None Include="shaders\main.fs" />
-    <None Include="shaders\main.vs" />
+    <None Include="shaders\fs\accept-color.fs" />
+    <None Include="shaders\vs\bypass-color.vs" />
+    <None Include="shaders\fs\red.fs" />
+    <None Include="shaders\fs\accept-1-texture.fs" />
+    <None Include="shaders\vs\bypass-texture.vs" />
+    <None Include="shaders\vs\bypass.vs" />
+    <None Include="shaders\fs\accept-2-textures.fs" />
+    <None Include="shaders\vs\transform-no-tex.vs" />
+    <None Include="shaders\vs\transform.vs" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="resources\awesomeface.png" />

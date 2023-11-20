@@ -8,6 +8,9 @@
 
 module Sample;
 
+extern const int SCR_WIDTH;
+extern const int SCR_HEIGHT;
+
 namespace HelloTexture
 {
 	void processInput(GLFWwindow* window)
@@ -20,12 +23,12 @@ namespace HelloTexture
 	{
 		glfwInit();
 
-		GLFWwindow* window = glfwCreateWindow(800, 600, "LearnOpenGL", NULL, NULL);
+		GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
 		
 		glfwMakeContextCurrent(window);
 		gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
 
-		Shader ourShader("./shaders/bypass.texture.vs", "./shaders/bypass.texture.fs");
+		Shader ourShader("./shaders/vs/bypass-texture.vs", "./shaders/fs/accept-1-texture.fs");
 		float vertices[] = {
 			// positions          // colors           // texture coords
 			0.5f, 0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f, // top right

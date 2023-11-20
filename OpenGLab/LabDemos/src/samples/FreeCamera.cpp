@@ -15,16 +15,15 @@ module Sample;
 
 using namespace std;
 
+extern const int SCR_WIDTH;
+extern const int SCR_HEIGHT;
+
 namespace FreeCamera
 {
 	void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 	void mouse_callback(GLFWwindow* window, double xpos, double ypos);
 	void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 	void processInput(GLFWwindow* window);
-
-	// settings
-	const unsigned int SCR_WIDTH = 800;
-	const unsigned int SCR_HEIGHT = 600;
 
 	// camera
 	Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
@@ -80,7 +79,7 @@ namespace FreeCamera
 
 		// build and compile our shader zprogram
 		// ------------------------------------
-		Shader ourShader("./shaders/main.vs", "./shaders/main.fs");
+		Shader ourShader("./shaders/vs/transform.vs", "./shaders/fs/accept-2-textures.fs");
 
 		// set up vertex data (and buffer(s)) and configure vertex attributes
 		// ------------------------------------------------------------------

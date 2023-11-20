@@ -14,17 +14,20 @@ module Sample;
 
 using namespace std;
 
-namespace HelloOopTriangle
+extern const int SCR_WIDTH;
+extern const int SCR_HEIGHT;
+
+namespace HelloTriangle_Oop
 {
 	Drawer drawer;
 	int main()
 	{
 		glfwInit();
-		GLFWwindow* window = glfwCreateWindow(800, 600, "LearnOpenGL", NULL, NULL);
+		GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
 		glfwMakeContextCurrent(window);
 		gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
 
-		Shader ourShader("./shaders/bypass.vs", "./shaders/bypass.fs");
+		Shader ourShader("./shaders/vs/bypass.vs", "./shaders/fs/red.fs");
 		vector data {
 				glm::vec3(-0.5f, -0.5f, 0.0f),
 				glm::vec3(0.5f, -0.5f, 0.0f),

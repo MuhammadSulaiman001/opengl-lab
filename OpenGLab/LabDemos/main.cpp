@@ -33,7 +33,25 @@ vector<std::pair<string, function<int()>>> demos = {
 	{
 		"Show triangle (OOP code)", []()-> int
 		{
-			return HelloOopTriangle::main();
+			return HelloTriangle_Oop::main();
+		},
+	},
+	{
+		"Show triangle (projection x view x model)", []()-> int
+		{
+			return HelloTriangle_ProjectionViewModel::main();
+		},
+	},
+	{
+		"Show triangle (perspective projection x view` x model`)", []()-> int
+		{
+			return HelloTriangle_Perspective::main();
+		},
+	},
+	{
+		"Show triangle (orthographic projection)", []()-> int
+		{
+			return HelloTriangle_Ortho::main();
 		},
 	},
 	{
@@ -46,6 +64,12 @@ vector<std::pair<string, function<int()>>> demos = {
 		"Circle vs. Disk", []()-> int
 		{
 			return CircleVsDisk::main();
+		},
+	},
+	{
+		"Rotate by WASD", []()-> int
+		{
+			return RotateByWASD::main();
 		},
 	},
 	// TODO
