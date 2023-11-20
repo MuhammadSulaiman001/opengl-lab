@@ -1,3 +1,0 @@
-- Modules (.ixx) used in LabDemos*, Headers (.h) used in Homework.* Projects
-	- Modules let you free to rename parent folders, move .ixx file to another folder
-	- For headers, you can add ".\src\abstraction" path to include directories

@@ -15,14 +15,18 @@ Each project has `README.md` file, here is a brief description about them:
 - [Homework.*](./): details for each homework can be found in README.md file in homework's root folder
     - Homerowk(s) will be announced in [Discussions](https://github.com/MuhammadSulaiman001/opengl-lab/discussions)
     - To watch all activities on this repo, select "All Activity" in Watch dropdown in the repo.
+    - **Don't create pull requests for your solutions to exercises and homeworks**
+    - **Moreover, Don't fork this repo and push your code to your public repo!**
+    - **For Homeworks: User should be able to run the application by double-clicking on .exe**
 - [UnitTests](./UnitTests): Unit Tests everywhere[^1] :100:
 
 ![projects-dependency-diagram](./../res/projects-dependency-diagram.png)
 
 NOTEs: 
 - To make changes to the code (ex. for do exercises and homeworks), I recommend you create new local branchand keep the master branch clean (to avoid code conflicts when pulling changes from remote).
-- **Don't create pull requests for your solutions for exercises and homeworks**
-- **Moreover, Don't fork this repo and push your code to your public repo!**
-- **For Homeworks: User should be able to run the application (especially homeworks) by double-clicking on .exe**
+- Modules (.ixx) used in LabDemos*, Headers (.h) used in Homework.* Projects
+	- Modules let you free to rename parent folders, move .ixx file to another folder
+	- For headers, you can add ".\src\abstraction" path to include directories
+
 
 [^1]: In general, you should create unit test project(s) wherever you work on a [modular] application.
