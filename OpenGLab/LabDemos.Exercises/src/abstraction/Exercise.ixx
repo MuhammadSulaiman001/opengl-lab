@@ -79,7 +79,7 @@ export namespace SineWave
 	int main();
 }
 
-namespace NeedFix_NothingIsDrawn
+export namespace NeedFix_NothingIsDrawn
 {
 	int main();
 }
