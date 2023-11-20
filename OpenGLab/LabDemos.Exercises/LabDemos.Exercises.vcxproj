@@ -159,24 +159,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\exercises\ColorByRGBKeys.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\exercises\NeedFix.WrongColoring.cpp" />
+    <ClCompile Include="src\exercises\PickTextureFromDevice.cpp" />
     <ClCompile Include="src\abstraction\Exercise.ixx" />
-    <ClCompile Include="src\exercises\AddShapeOnButtonClick.cpp" />
     <ClCompile Include="src\exercises\DragByMouse.cpp" />
-    <ClCompile Include="src\exercises\DrawShapeOnKeyClick.cpp" />
-    <ClCompile Include="src\exercises\FillVsWireframe.cpp" />
+    <ClCompile Include="src\exercises\AddShapeOnKeyPress.cpp" />
     <ClCompile Include="src\exercises\AudioPlayer.cpp" />
-    <ClCompile Include="src\exercises\ImplementMoreOpenGlShapes.cpp" />
     <ClCompile Include="src\exercises\DrawShapeOnUserSelection.cpp" />
     <ClCompile Include="src\exercises\MoveByWSAD.cpp" />
     <ClCompile Include="src\exercises\NeedFix.CombineTextures.cpp" />
     <ClCompile Include="src\exercises\NeedFix.WrongIndices.cpp" />
     <ClCompile Include="src\exercises\NeedFix.KeepSceneAtCenter.cpp" />
     <ClCompile Include="src\exercises\NeedFix.LoadTexture.cpp" />
-    <ClCompile Include="src\exercises\NeedFix.UpsideDownTexture.cpp" />
     <ClCompile Include="src\exercises\NeedFix.VAO.cpp" />
-    <ClCompile Include="src\exercises\NeedFix.ViewPort.cpp" />
-    <ClCompile Include="src\exercises\Primitives.cpp" />
     <ClCompile Include="src\exercises\ReadVerticesFromFile.cpp" />
     <ClCompile Include="src\exercises\ReadVerticesFromLib.cpp" />
     <ClCompile Include="src\exercises\ReadVerticesFromObj.cpp" />

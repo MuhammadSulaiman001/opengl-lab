@@ -9,125 +9,101 @@ export module Exercise;
 // I recommend doing the exercises at the end of https:\\www.learnopengl.com as well.
 /// __________________ ///
 
-export namespace AddShapeOnButtonClick
+export namespace AddShapeOnKeyPress
 {
-
+	int main();
 }
 
 export namespace AudioPlayer
 {
-
+	int main();
 }
 
 export namespace DragByMouse
 {
-
+	int main();
 }
 
-//export namespace PickTextureFromDevice
-//{
-//
-//}
-
-export namespace DrawShapeOnKeyClick
+export namespace DrawShapeOnUserSelection
 {
+	int main();
+}
 
+export namespace PickTextureFromDevice
+{
+	int main();
 }
 
 export namespace FillVsWireframe
 {
-
-}
-
-/// <summary>
-/// Disk, Circle, Octagon, Box, Polyline, Arc, Line
-/// </summary>
-export namespace ImplementMoreOpenGlShapes
-{
-
+	int main();
 }
 
 export namespace MoveByWSAD
 {
-
+	int main();
 }
 
 export namespace ColorByRGBKeys
 {
-
-}
-
-export namespace Primitives
-{
-
+	int main();
 }
 
 export namespace ReadVerticesFromFile
 {
-
-}
-
-/// <summary>
-/// Learn how to consume .lib services in your project
-/// </summary>
-export namespace ReadVerticesFromLib
-{
-
+	int main();
 }
 
 /// <summary>
 /// Learn how to consume .obj services in your project
 /// </summary>
+export namespace ReadVerticesFromObj
+{
+	int main();
+}
+/// <summary>
+/// Learn how to consume .lib services in your project
+/// </summary>
 export namespace ReadVerticesFromLib
 {
-
+	int main();
 }
 
 export namespace TwoWindows
 {
-
+	int main();
 }
 
 export namespace SineWave
 {
-
+	int main();
 }
 
 export namespace NeedFix_CombineTextures
 {
-
+	int main();
 }
 
 export namespace NeedFix_KeepSceneAtCenter
 {
-
+	int main();
 }
 
 export namespace NeedFix_LoadTexture
 {
-
-}
-
-export namespace NeedFix_UpsideDownTexture
-{
-
+	int main();
 }
 
 export namespace NeedFix_VAO
 {
-
-}
-
-export namespace NeedFix_ViewPort
-{
-
+	int main();
 }
 
 export namespace NeedFix_WrongIndices
 {
-
+	int main();
 }
-export namespace NeedFix_WrongColor // - triangle should be blue
+export namespace NeedFix_WrongColoring // - triangle should be blue
 {
-
+	int main();
 }

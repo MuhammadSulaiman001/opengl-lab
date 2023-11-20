@@ -8,9 +8,6 @@
     <ClCompile Include="src\exercises\DragByMouse.cpp">
       <Filter>Exercises</Filter>
     </ClCompile>
-    <ClCompile Include="src\exercises\FillVsWireframe.cpp">
-      <Filter>Exercises</Filter>
-    </ClCompile>
     <ClCompile Include="src\exercises\AudioPlayer.cpp">
       <Filter>Exercises</Filter>
     </ClCompile>
@@ -26,19 +23,10 @@
     <ClCompile Include="src\exercises\NeedFix.LoadTexture.cpp">
       <Filter>Exercises</Filter>
     </ClCompile>
-    <ClCompile Include="src\exercises\NeedFix.UpsideDownTexture.cpp">
-      <Filter>Exercises</Filter>
-    </ClCompile>
     <ClCompile Include="src\exercises\NeedFix.VAO.cpp">
       <Filter>Exercises</Filter>
     </ClCompile>
-    <ClCompile Include="src\exercises\NeedFix.ViewPort.cpp">
-      <Filter>Exercises</Filter>
-    </ClCompile>
     <ClCompile Include="src\exercises\NeedFix.WrongIndices.cpp">
-      <Filter>Exercises</Filter>
-    </ClCompile>
-    <ClCompile Include="src\exercises\Primitives.cpp">
       <Filter>Exercises</Filter>
     </ClCompile>
     <ClCompile Include="src\exercises\ReadVerticesFromFile.cpp">
@@ -53,19 +41,22 @@
     <ClCompile Include="src\exercises\TwoWindows.cpp">
       <Filter>Exercises</Filter>
     </ClCompile>
-    <ClCompile Include="src\exercises\AddShapeOnButtonClick.cpp">
-      <Filter>Exercises</Filter>
-    </ClCompile>
-    <ClCompile Include="src\exercises\DrawShapeOnKeyClick.cpp">
+    <ClCompile Include="src\exercises\AddShapeOnKeyPress.cpp">
       <Filter>Exercises</Filter>
     </ClCompile>
     <ClCompile Include="src\exercises\DrawShapeOnUserSelection.cpp">
       <Filter>Exercises</Filter>
     </ClCompile>
-    <ClCompile Include="src\exercises\ImplementMoreOpenGlShapes.cpp">
+    <ClCompile Include="src\exercises\ReadVerticesFromObj.cpp">
       <Filter>Exercises</Filter>
     </ClCompile>
-    <ClCompile Include="src\exercises\ReadVerticesFromObj.cpp">
+    <ClCompile Include="src\exercises\ColorByRGBKeys.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exercises\PickTextureFromDevice.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exercises\NeedFix.WrongColoring.cpp">
       <Filter>Exercises</Filter>
     </ClCompile>
   </ItemGroup>

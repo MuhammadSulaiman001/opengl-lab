@@ -11,8 +11,7 @@
 	- Advanced -> Charachter Set = "Use Multi-Byte"
 	- C/C++ -> Preprocessor -> preprocessor Definitions = _CRT_SECURE_NO_WARNINGS added
     - OutputPath/Temp Path Changed
-    - Post build event to copy resources added
-- Note: x64 configuration removed, as .lib is built under x86 configuration
+    - Added Post build event to copy resources to output directory 
 
 ## Demo (Rebuild/Run)
 

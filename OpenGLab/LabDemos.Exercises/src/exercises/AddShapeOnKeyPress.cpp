@@ -3,7 +3,7 @@
 
 module Exercise;
 
-namespace NeedFix_KeepSceneAtCenter
+namespace AddShapeOnKeyPress
 {
 	int main()
 	{
