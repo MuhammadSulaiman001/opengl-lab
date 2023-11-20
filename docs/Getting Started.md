@@ -18,7 +18,7 @@ We'll use the most-up-to-date tools to build/develop C++ projects:
     * `C:\Program Files\Git\bin`
 6. Add `msbuild` to PATH,
     - To find `msbuild.exe`: Open Visual Studio 2022 -> Tools menu -> Command Line -> Developer Command Prompt -> Run `where msbuild` -> copy the path[^2] and add it to PATH
-    - This allows you to build any `.sln` from command-line (ex. powershell), so you don't have to open the solution (.sln) in VS in order to build the projects (especially if you do clone opensource projects alot :smile:)
+    - This allows you to build any `.sln` from command-line (ex. powershell), so you don't have to open the solution (.sln) in VS in order to build the projects (especially if you do clone opensource projects a lot :smile:)
 
 ### Build projects in this repo
 
@@ -32,7 +32,7 @@ cd opengl-lab\OpenGLab # move to .sln location
 msbuild OpenGLab.sln # build the solution
 ```
 
-Now, you can find the build output for inside project folder (ex. `LabDemos.exe` can be found in `LabDemos\x64\Debug\` folder)
+Now, you can find the build output inside project folder (ex. `LabDemos.exe` can be found in `LabDemos\x64\Debug\` folder)
 
 ### Build projects in [LearnOpenGL](https://github.com/JoeyDeVries/LearnOpenGL) repo
 
@@ -45,7 +45,7 @@ git clone https://github.com/JoeyDeVries/LearnOpenGL
 cd LearnOpenGL
 mkdir build && cd build # create/move to build directory
 cmake .. # build the build system :)
-# cmake --build . # build all the projects, might take few minutes!
+cmake --build . # build all the projects, might take few minutes!
 # cmake --build . --target 1.getting_started__2.1.hello_triangle # builds only this target
 cd ..\bin # move to output location
 explorer . # open in windows explorer!
