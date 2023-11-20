@@ -7,6 +7,8 @@ namespace DragByMouse
 {
 	int main()
 	{
+		// TODO: Open GLFW window with one white shape (ex. triangle) is shown at center,
+		// user can press the left button of the mouse over the shape and drag the shape to another position
 		return 0;
 	}
 }

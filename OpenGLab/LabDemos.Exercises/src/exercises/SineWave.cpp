@@ -7,6 +7,7 @@ namespace SineWave
 {
 	int main()
 	{
+		// TODO: Open GLFW window with a white sine wave is drawn from left to right
 		return 0;
 	}
 }

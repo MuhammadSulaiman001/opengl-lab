@@ -13,24 +13,6 @@ vector<std::pair<string, function<int()>>> exercises = {
 		},
 	},
 	{
-		"Audio Player", []()-> int
-		{
-			return AudioPlayer::main();
-		},
-	},
-	{
-		"Drag Shape By Mouse", []()-> int
-		{
-			return DragByMouse::main();
-		},
-	},
-	{
-		"Pick Texture With File Picker", []()-> int
-		{
-			return PickTextureFromDevice::main();
-		},
-	},
-	{
 		"Move By WSAD", []()-> int
 		{
 			return MoveByWSAD::main();
@@ -43,21 +25,51 @@ vector<std::pair<string, function<int()>>> exercises = {
 		},
 	},
 	{
-		"Read Vertices From File", []()-> int
+		"Read Vertices From .txt File", []()-> int
 		{
 			return ReadVerticesFromFile::main();
 		},
 	},
 	{
-		"Read Vertices From .Lib", []()-> int
+		"Read Vertices From .lib file", []()-> int
 		{
 			return ReadVerticesFromLib::main();
 		},
 	},
 	{
-		"Read Vertices From .Obj", []()-> int
+		"Read Vertices From .obj file", []()-> int
 		{
 			return ReadVerticesFromObj::main();
+		},
+	},
+	{
+		"Draw Sine Wave", []()-> int
+		{
+			return SineWave::main();
+		},
+	},
+	{
+		"Pick Texture With File Picker", []()-> int
+		{
+			return PickTextureFromDevice::main();
+		},
+	},
+	{
+		"Simple Audio Player", []()-> int
+		{
+			return AudioPlayer::main();
+		},
+	},
+	{
+		"Drag Shape By Mouse", []()-> int
+		{
+			return DragByMouse::main();
+		},
+	},
+	{
+		"Draw Shape Based on User Selection", []()-> int
+		{
+			return DrawShapeOnUserSelection::main(); // it's upside down + more..
 		},
 	},
 	{
@@ -67,9 +79,9 @@ vector<std::pair<string, function<int()>>> exercises = {
 		},
 	},
 	{
-		"Sine Wave", []()-> int
+		"NeedFix: Nothing is drawn", []()-> int
 		{
-			return SineWave::main();
+			return NeedFix_NothingIsDrawn::main();
 		},
 	},
 	{
@@ -88,12 +100,6 @@ vector<std::pair<string, function<int()>>> exercises = {
 		"NeedFix: Texture is not loaded correctly", []()-> int
 		{
 			return NeedFix_LoadTexture::main(); // it's upside down + more..
-		},
-	},
-	{
-		"Draw Shape Based on User Selection", []()-> int
-		{
-			return DrawShapeOnUserSelection::main(); // it's upside down + more..
 		},
 	},
 	{
@@ -124,7 +130,9 @@ int main()
 	while (keepShowingDemos)
 	{
 		system("cls");
-		cout << "Enter demo number [1, " << exercises.size() << "] to show it, enter any other value to break..." <<
+		cout << "Implementing the exercise is left to you.. " <<
+			endl;
+		cout << "Enter exercise number [1, " << exercises.size() << "] to show it, enter any other value to break..." <<
 			endl;
 		for (int i = 0; i < exercises.size(); ++i)
 		{

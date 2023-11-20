@@ -159,6 +159,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\exercises\NeedFix.NothingIsDrawn.cpp" />
     <ClCompile Include="src\exercises\ColorByRGBKeys.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="src\exercises\NeedFix.WrongColoring.cpp" />

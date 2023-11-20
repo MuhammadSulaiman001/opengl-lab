@@ -59,6 +59,9 @@
     <ClCompile Include="src\exercises\NeedFix.WrongColoring.cpp">
       <Filter>Exercises</Filter>
     </ClCompile>
+    <ClCompile Include="src\exercises\NeedFix.NothingIsDrawn.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Abstraction">

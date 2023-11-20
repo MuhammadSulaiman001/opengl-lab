@@ -7,6 +7,8 @@ namespace MoveByWSAD
 {
 	int main()
 	{
+		// TODO: Open GLFW window with a white shape (ex. triangle) is drawn in the middle of the scene.
+		// User can press the arrows on keyboard to move the shape in any direction (keys can be presses simultaneously)
 		return 0;
 	}
 }

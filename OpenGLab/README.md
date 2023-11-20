@@ -26,7 +26,6 @@ NOTEs:
 - To make changes to the code (ex. for do exercises and homeworks), I recommend you create new local branchand keep the master branch clean (to avoid code conflicts when pulling changes from remote).
 - Modules (.ixx) used in LabDemos*, Headers (.h) used in Homework.* Projects
 	- Modules let you free to rename parent folders, move .ixx file to another folder
-	- For headers, you can add ".\src\abstraction" path to include directories
 
 
 [^1]: In general, you should create unit test project(s) wherever you work on a [modular] application.

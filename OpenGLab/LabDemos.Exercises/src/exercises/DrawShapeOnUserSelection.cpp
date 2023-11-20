@@ -7,6 +7,9 @@ namespace DrawShapeOnUserSelection
 {
 	int main()
 	{
+		// TODO: Open GLFW window with ImGUI dropdown and an empty screen.
+		// Values in dropdown are "rectangle", "triangle", "circle", "star"
+		// When the user selects a value, the corresponding shape should be drawn in the middle of the scene
 		return 0;
 	}
 }

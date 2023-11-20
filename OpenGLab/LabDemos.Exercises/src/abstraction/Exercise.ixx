@@ -79,6 +79,11 @@ export namespace SineWave
 	int main();
 }
 
+namespace NeedFix_NothingIsDrawn
+{
+	int main();
+}
+
 export namespace NeedFix_CombineTextures
 {
 	int main();
