@@ -4,6 +4,10 @@
 #include <imgui.h>
 #include <imgui_impl_glfw.h>
 #include <imgui_impl_opengl3.h>
+#include <fstream>
+#include <iostream>
+#include <string>
+#include <vector>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
@@ -30,4 +34,24 @@ void shutdown_ImGui()
 	ImGui_ImplOpenGL3_Shutdown();
 	ImGui_ImplGlfw_Shutdown();
 	ImGui::DestroyContext();
+}
+
+// todo unit test
+std::vector<float> read_float_array_from_file(const char* filename)
+{
+	std::vector<float> result;
+
+	std::ifstream file(filename);
+	if (!file.is_open()) {
+		std::cerr << "Error opening file: " << filename << std::endl;
+		return result;
+	}
+
+	float value;
+	while (file >> value) {
+		result.push_back(value);
+	}
+
+	file.close();
+	return result;
 }

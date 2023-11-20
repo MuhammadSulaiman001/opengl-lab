@@ -9,6 +9,13 @@ module Drawer;
 void Drawer::draw(OpenGlShape& shape)
 {
 	glBindVertexArray(shape.get_vao());
-	glDrawArrays(shape.get_drawing_mode(), 0, shape.get_data_size());
+	glDrawArrays(shape.get_drawing_mode(), 0, shape.get_number_of_vertices());
+	glBindVertexArray(0);
+}
+void Drawer::draw(OpenGlTextureShape& shape)
+{
+	glBindTexture(GL_TEXTURE_2D, shape.get_texture_id());
+	glBindVertexArray(shape.get_vao());
+	glDrawArrays(shape.get_drawing_mode(), 0, shape.get_number_of_vertices());
 	glBindVertexArray(0);
 }

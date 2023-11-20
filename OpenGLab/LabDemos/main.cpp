@@ -72,6 +72,37 @@ vector<std::pair<string, function<int()>>> demos = {
 			return RotateByWASD::main();
 		},
 	},
+	{
+		"Hello texture (minimal code)", []()-> int
+		{
+			return HelloTexture::main();
+		},
+	},
+	{
+		"Hello texture (OOP)", []()-> int
+		{
+			return HelloTexture_Oop::main();
+		},
+	},
+	{
+		"Free Camera (minimal code)", []()-> int
+		{
+			return FreeCamera::main();
+		},
+	},
+	{
+		"Free Camera (OOP)", []()-> int
+		{
+			return FreeCamera_Oop::main();
+		},
+	},
+	// TODO
+	// {
+	// 	"Combine Textures", []()-> int
+	// 	{
+	// 		throw NotImplementedException();
+	// 	},
+	// },
 	// TODO
 	// {
 	// 	"Choose Texture With File Picker", []()-> int
@@ -86,39 +117,11 @@ vector<std::pair<string, function<int()>>> demos = {
 	// - https://github.com/ebraminio/ShaderAnalogClock
 	// - https://github.com/siyamulislam/DynamicVillage/blob/main/main.cpp
 	// {
-	// 	"Show triangle (OOP code)", []()-> int
+	// 	"Analogue Clock", []()-> int
 	// 	{
-	// 		return HelloOopTriangle::main();
+	// 		return AnalogueClock::main();
 	// 	},
 	// },
-	// TODO:with minimum code
-	{
-		"Hello texture", []()-> int
-		{
-			return HelloTexture::main();
-		},
-	},
-	// TODO
-	// {
-	// 	"Combine Textures", []()-> int
-	// 	{
-	// 		throw NotImplementedException();
-	// 	},
-	// },
-	// TODO
-	// {
-	// 	"Combine Textures", []()-> int
-	// 	{
-	// 		throw NotImplementedException();
-	// 	},
-	// },
-	// TODO: run camera sample with minimum code
-	{
-		"Free Camera Demo", []()-> int
-		{
-			return FreeCamera::main();
-		},
-	},
 	// TODO
 	// {
 	// 	"Browse/Play audio file", []()-> int
@@ -133,7 +136,6 @@ vector<std::pair<string, function<int()>>> demos = {
 	// 		throw NotImplementedException();
 	// 	},
 	// },
-
 };
 
 int main()

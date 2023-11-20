@@ -13,15 +13,32 @@ using namespace std;
 
 export class OpenGlShape
 {
-	unsigned int VBO_, VAO_;
 	GLenum drawing_mode_;
-	vector<glm::vec3> vertices_;
-	OpenGlShape(); // using empty ctor is not allowed
+	unsigned int number_of_vertices_;
+	OpenGlShape(); //= delete; // using empty ctor is not allowed
+protected:
+	unsigned int VBO_, VAO_;
 
 public:
-	OpenGlShape(vector<glm::vec3>, GLenum);
+	OpenGlShape(const vector<glm::vec3>&, GLenum);
+	OpenGlShape(const vector<float>&, GLenum);
 	~OpenGlShape();
 	unsigned int get_vao();
 	GLenum get_drawing_mode();
-	int get_data_size();
+	int get_number_of_vertices();
+};
+
+export class OpenGlTextureShape : public OpenGlShape
+{
+private:
+	unsigned int texture_id_;
+
+public:
+
+	OpenGlTextureShape(const vector<glm::vec3>&, GLenum,
+		const char*, GLenum image_format, const vector<glm::vec2>&); // GL_RGB = jpg, GL_RGBA = .png
+	OpenGlTextureShape(const vector<float>& vertices, GLenum mode,
+	const char* texture_path, GLenum);
+	~OpenGlTextureShape();
+	unsigned int get_texture_id();
 };

@@ -32,6 +32,9 @@ namespace GlfwWindowWithButton
 		{
 			glfwPollEvents();
 
+			if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+				glfwSetWindowShouldClose(window, true);
+
 			// 1. Create panel UI (inner window)
 			ImGui_ImplOpenGL3_NewFrame();
 			ImGui_ImplGlfw_NewFrame();

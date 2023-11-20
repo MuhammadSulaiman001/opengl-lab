@@ -62,6 +62,12 @@
     <ClCompile Include="src\samples\RotateByWASD.cpp">
       <Filter>Samples</Filter>
     </ClCompile>
+    <ClCompile Include="src\samples\HelloTexture.Oop.cpp">
+      <Filter>Samples</Filter>
+    </ClCompile>
+    <ClCompile Include="src\samples\FreeCamera.Oop.cpp">
+      <Filter>Samples</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="shaders\fs\accept-2-textures.fs">
@@ -100,5 +106,10 @@
     <Image Include="resources\container.jpg">
       <Filter>Resources</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="resources\cube_pos_tex.txt">
+      <Filter>Resources</Filter>
+    </Text>
   </ItemGroup>
 </Project>

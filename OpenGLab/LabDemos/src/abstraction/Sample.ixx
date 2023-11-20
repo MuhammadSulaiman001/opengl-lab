@@ -58,6 +58,14 @@ export namespace HelloTexture {
 	int main();
 }
 
+export namespace HelloTexture_Oop {
+	int main();
+}
+
 export namespace FreeCamera {
+	int main();
+}
+
+export namespace FreeCamera_Oop {
 	int main();
 }

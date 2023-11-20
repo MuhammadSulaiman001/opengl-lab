@@ -49,6 +49,9 @@ namespace HelloTriangle_Ortho
 		OpenGlShape triangle(data, GL_TRIANGLES);
 		while (!glfwWindowShouldClose(window))
 		{
+			if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+				glfwSetWindowShouldClose(window, true);
+
 			// Render
 			glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 			glClear(GL_COLOR_BUFFER_BIT);

@@ -31,6 +31,9 @@ namespace OpenFileDialog
 		{
 			glfwPollEvents();
 
+			if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+				glfwSetWindowShouldClose(window, true);
+
 			// 1. Create the UI (inner window)
 			ImGui_ImplOpenGL3_NewFrame();
 			ImGui_ImplGlfw_NewFrame();

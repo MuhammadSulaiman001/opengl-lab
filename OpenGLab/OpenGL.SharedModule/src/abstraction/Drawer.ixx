@@ -10,5 +10,6 @@ import OpenGlShape;
 export class Drawer
 {
 public:
-    void draw(OpenGlShape& shape);
+    void draw(OpenGlShape&);
+    void draw(OpenGlTextureShape&);
 };

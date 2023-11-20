@@ -162,6 +162,7 @@
     <ClCompile Include="src\exercises\NeedFix.NothingIsDrawn.cpp" />
     <ClCompile Include="src\exercises\ColorByRGBKeys.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\exercises\NeedFix.VBO.cpp" />
     <ClCompile Include="src\exercises\NeedFix.WrongColoring.cpp" />
     <ClCompile Include="src\exercises\PickTextureFromDevice.cpp" />
     <ClCompile Include="src\abstraction\Exercise.ixx" />

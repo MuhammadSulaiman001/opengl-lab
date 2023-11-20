@@ -5,6 +5,7 @@ module; // optional. Defines the beginning of the global module fragment
 
 #include <stdexcept>
 #include <GLFW/glfw3.h>
+#include <vector>
 
 export module SharedModule;
 
@@ -17,3 +18,5 @@ public:
 export void setup_ImGUI(GLFWwindow* window);
 export void render_ImGui();
 export void shutdown_ImGui();
+
+export std::vector<float> read_float_array_from_file(const char* filename);

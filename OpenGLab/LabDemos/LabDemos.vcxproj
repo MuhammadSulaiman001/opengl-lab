@@ -172,6 +172,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\samples\.constants.cpp" />
+    <ClCompile Include="src\samples\FreeCamera.Oop.cpp" />
+    <ClCompile Include="src\samples\HelloTexture.Oop.cpp" />
     <ClCompile Include="src\samples\HelloTriangle.ProjectionViewModel.cpp" />
     <ClCompile Include="src\samples\FreeCamera.cpp" />
     <ClCompile Include="src\abstraction\Sample.ixx">
@@ -213,6 +215,9 @@
     <ProjectReference Include="..\OpenGL.SharedModule\OpenGL.SharedModule.vcxproj">
       <Project>{9e4005e1-525d-4120-bce4-a70decc26973}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="resources\cube_pos_tex.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

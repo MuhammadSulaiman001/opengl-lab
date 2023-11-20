@@ -22,6 +22,7 @@ namespace CircleVsDisk
 {
 	std::vector<glm::vec3> create_circle_points(glm::vec3 center, float radius, int num_of_segments);
 	vector<glm::vec3> shift(vector<glm::vec3> vertices, glm::vec3 offset);
+
 	Drawer drawer;
 
 	int main()
@@ -51,6 +52,9 @@ namespace CircleVsDisk
 
 		while (!glfwWindowShouldClose(window))
 		{
+			if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+				glfwSetWindowShouldClose(window, true);
+
 			// Render
 			glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 			glClear(GL_COLOR_BUFFER_BIT);
