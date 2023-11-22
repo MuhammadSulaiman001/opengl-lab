@@ -110,12 +110,6 @@ vector<std::pair<string, function<int()>>> demos = {
 	// 		throw NotImplementedException();
 	// 	},
 	// },
-	// TODO: Analogue Clock
-	// - might add one of these to LabDemos.Exercises/Readme.md
-	// - https://github.com/kfoozminus/Analog-Wall-Clock-Graphics-Project-/blob/master/wallClock.cpp
-	// - https://github.com/sprintr/opengl-examples/blob/master/OpenGL-Clock-Animated.cpp
-	// - https://github.com/ebraminio/ShaderAnalogClock
-	// - https://github.com/siyamulislam/DynamicVillage/blob/main/main.cpp
 	// {
 	// 	"Analogue Clock", []()-> int
 	// 	{

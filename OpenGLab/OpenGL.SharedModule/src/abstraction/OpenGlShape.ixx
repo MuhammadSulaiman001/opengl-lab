@@ -36,9 +36,9 @@ private:
 public:
 
 	OpenGlTextureShape(const vector<glm::vec3>&, GLenum,
-		const char*, GLenum image_format, const vector<glm::vec2>&); // GL_RGB = jpg, GL_RGBA = .png
+		const char*, const vector<glm::vec2>&);
 	OpenGlTextureShape(const vector<float>& vertices, GLenum mode,
-	const char* texture_path, GLenum);
+	const char* texture_path);
 	~OpenGlTextureShape();
 	unsigned int get_texture_id();
 };

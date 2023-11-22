@@ -46,7 +46,7 @@ Libaries can be found in different flavors, the common ones are:
 - Headers only (ex. glm)
 - Headers and sources (ex. glad, stb)
 - Headers + Lib (ex. glfw)
-- Headers + Lib + DLL (ex. assimp, irrklang)
+- Headers + Lib + DLL (ex. assimp, irrklang, glut)
 
 1. To tell VS where the header files are (so you can `#include <>` them):
     - Project properties -> C\C++ -> General -> Additional Include Directories, 
@@ -113,3 +113,5 @@ These are some extensions to install in Visual Studio
 - If there is, for some reasone, more than one entry point in the application (ex. 2 cpp files, each has a main function), then you must exclude one file from build..
     - File properties -> exclude from build = Yes
 - To run project without set it as startup: Right click -> debug -> run instance.
+- Rebuild the project after writing code in shader's file..
+- 

@@ -27,6 +27,8 @@
     - one benefit is that, putting the data near the GPU makes rendering faster
     - ...
 
+- Homogeneous coordinate = the w component of a vec4 (position).
+
 - Think of the scene as the following:
     - it starts where all the objects are in 0,0,0
     - objects will scatter away because you 1. multiply each object with model matrix 2. draw it,
@@ -55,3 +57,36 @@
 
 
 [^1]: Work in progress.. not always in good shape :kissing_smiling_eyes:
+
+## Lighting
+
+- Ambient
+	- objects are almost never completely dark
+	- ex. moon light
+
+- Diffuse
+	- The color of the fragment based on the position of the light
+    - diffuse and ambient should be the same (often)
+
+If the angle gets smaller, the shape should get lighter,
+If the angle gets larger, the shape should get darker..
+
+![Diffuse](../res/diffuse.png)
+
+- Specular 
+	- Simulates the bright spot of a light that appears on shiny objects
+	- The color of the fragment based on the position of the viewer
+
+When the Phong lighting model is implemented in the vertex shader it is called Gouraud shading instead of Phong shading
+
+To determine the color of the shape, fragment shader needs the normal vector (yellow) and the lamp position... we pass these values so the final color is calculated like this
+
+The specular component of the light is usually kept at vec3(1.0) shining at full intensity.
+
+To use values from this [table of materials](http://devernay.free.fr/cours/opengl/materials.html): give light properties full intensities
+
+![materials-table](../res/materials-table.png)
+
+- Lighting maps
+	- Objects in the real world however usually do not consist of a single material!
+

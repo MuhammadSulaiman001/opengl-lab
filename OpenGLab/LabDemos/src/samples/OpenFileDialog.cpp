@@ -63,10 +63,10 @@ namespace OpenFileDialog
 
 			ImGui::SameLine();
 			ImGui::End();
+			render_ImGui();
 
 			// 2. Draw OpenGL Scene
 
-			render_ImGui();
 			glfwSwapBuffers(window);
 		}
 

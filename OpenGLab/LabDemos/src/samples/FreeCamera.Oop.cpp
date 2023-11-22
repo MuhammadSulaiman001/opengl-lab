@@ -57,7 +57,7 @@ namespace FreeCamera_Oop
 
 		auto vertices = read_float_array_from_file("./resources/cube_pos_tex.txt");
 
-		OpenGlTextureShape cube(vertices, GL_TRIANGLES, "./resources/awesomeface.png", GL_RGBA);
+		OpenGlTextureShape cube(vertices, GL_TRIANGLES, "./resources/awesomeface.png");
 
 		ourShader.use();
 		ourShader.setInt("texture1", 0);

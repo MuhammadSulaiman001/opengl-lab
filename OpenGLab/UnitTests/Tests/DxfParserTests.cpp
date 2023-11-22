@@ -7,7 +7,7 @@
 
 using namespace std;
 
-namespace opengl_utils_tests
+namespace dxf_parser_tests
 {
 	TEST(DxfParserTests, test_files_should_exist)
 	{

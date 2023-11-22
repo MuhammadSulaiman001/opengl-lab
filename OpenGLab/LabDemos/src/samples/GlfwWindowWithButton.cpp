@@ -42,15 +42,15 @@ namespace GlfwWindowWithButton
 			ImGui::Begin("My Control panel");
 			if (ImGui::Button("Click Me!"))
 			{
-				// do/draw something when button clicked...
+				// do something when button clicked...
 			}
 
 			ImGui::SameLine();
 			ImGui::End();
+			render_ImGui();
 
 			// 2. Draw OpenGL Scene
 
-			render_ImGui();
 			glfwSwapBuffers(window);
 		}
 
