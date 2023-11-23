@@ -11,6 +11,7 @@ export module OpenGlShape;
 
 using namespace std;
 
+// TODO, accept passing VBO in ctor!
 export class OpenGlShape
 {
 	GLenum drawing_mode_;
@@ -28,6 +29,7 @@ public:
 	int get_number_of_vertices();
 };
 
+// TODO, accept passing VBO in ctor!
 export class OpenGlTextureShape : public OpenGlShape
 {
 private:

@@ -74,7 +74,7 @@ struct dimensions
 // Size Of Each Object: Blueface,     Bucket,      Target,       Coke,         Vase
 dimensions size[5] = {{1.0f, 1.0f}, {1.0f, 1.0f}, {1.0f, 1.0f}, {0.5f, 1.0f}, {0.75f, 1.5f}};
 
-bool LoadTGA(TextureImage* texture, char* filename) // Loads A TGA File Into Memory
+bool LoadTGA(TextureImage* texture, const char* filename) // Loads A TGA File Into Memory
 {
 	GLubyte TGAheader[12] = {0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0}; // Uncompressed TGA Header
 	GLubyte TGAcompare[12]; // Used To Compare TGA Header
@@ -260,16 +260,16 @@ BOOL Initialize(GL_Window* window, Keys* keys) // Any OpenGL Initialization Goes
 
 	srand((unsigned)time(NULL)); // Randomize Things
 
-	if ((!LoadTGA(&textures[0], const_cast<char*>("res/BlueFace.tga"))) || // Load The BlueFace Texture
-		(!LoadTGA(&textures[1], const_cast<char*>("res/Bucket.tga"))) || // Load The Bucket Texture
-		(!LoadTGA(&textures[2], const_cast<char*>("res/Target.tga"))) || // Load The Target Texture
-		(!LoadTGA(&textures[3], const_cast<char*>("res/Coke.tga"))) || // Load The Coke Texture
-		(!LoadTGA(&textures[4], const_cast<char*>("res/Vase.tga"))) || // Load The Vase Texture
-		(!LoadTGA(&textures[5], const_cast<char*>("res/Explode.tga"))) || // Load The Explosion Texture
-		(!LoadTGA(&textures[6], const_cast<char*>("res/Ground.tga"))) || // Load The Ground Texture
-		(!LoadTGA(&textures[7], const_cast<char*>("res/Sky.tga"))) || // Load The Sky Texture
-		(!LoadTGA(&textures[8], const_cast<char*>("res/Crosshair.tga"))) || // Load The Crosshair Texture
-		(!LoadTGA(&textures[9], const_cast<char*>("res/Font.tga")))) // Load The Crosshair Texture
+	if ((!LoadTGA(&textures[0], "res/BlueFace.tga")) || // Load The BlueFace Texture
+		(!LoadTGA(&textures[1], "res/Bucket.tga")) || // Load The Bucket Texture
+		(!LoadTGA(&textures[2], "res/Target.tga")) || // Load The Target Texture
+		(!LoadTGA(&textures[3], "res/Coke.tga")) || // Load The Coke Texture
+		(!LoadTGA(&textures[4], "res/Vase.tga")) || // Load The Vase Texture
+		(!LoadTGA(&textures[5], "res/Explode.tga")) || // Load The Explosion Texture
+		(!LoadTGA(&textures[6], "res/Ground.tga")) || // Load The Ground Texture
+		(!LoadTGA(&textures[7], "res/Sky.tga")) || // Load The Sky Texture
+		(!LoadTGA(&textures[8], "res/Crosshair.tga")) || // Load The Crosshair Texture
+		(!LoadTGA(&textures[9], "res/Font.tga"))) // Load The Crosshair Texture
 	{
 		return FALSE; // If Loading Failed, Return False
 	}

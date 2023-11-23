@@ -20,3 +20,4 @@ export void render_ImGui();
 export void shutdown_ImGui();
 
 export std::vector<float> read_float_array_from_file(const char* filename);
+export unsigned int load_texture(const char* filename);

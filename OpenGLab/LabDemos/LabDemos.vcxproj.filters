@@ -4,10 +4,6 @@
     <Filter Include="Shaders">
       <UniqueIdentifier>{40fd2684-c4ba-4ec4-b91b-52c20ee2d1e6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resources">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="Modules">
       <UniqueIdentifier>{8436e62d-0bb4-4b7c-8e83-4a159d6b4851}</UniqueIdentifier>
     </Filter>
@@ -68,6 +64,15 @@
     <ClCompile Include="src\samples\FreeCamera.Oop.cpp">
       <Filter>Samples</Filter>
     </ClCompile>
+    <ClCompile Include="src\samples\Lighting.Phong.cpp">
+      <Filter>Samples</Filter>
+    </ClCompile>
+    <ClCompile Include="src\samples\HelloTexture.Transparency.cpp">
+      <Filter>Samples</Filter>
+    </ClCompile>
+    <ClCompile Include="src\samples\HelloTexture.Sphere.cpp">
+      <Filter>Samples</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="shaders\fs\accept-2-textures.fs">
@@ -98,18 +103,17 @@
     <None Include="shaders\vs\transform-no-tex.vs">
       <Filter>Shaders</Filter>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="resources\awesomeface.png">
-      <Filter>Resources</Filter>
-    </Image>
-    <Image Include="resources\container.jpg">
-      <Filter>Resources</Filter>
-    </Image>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="resources\cube_pos_tex.txt">
-      <Filter>Resources</Filter>
-    </Text>
+    <None Include="shaders\vs\bypass-phong.vs">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\vs\bypass-phong-with-texture.vs">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\fs\basic-phong.fs">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\fs\accept-color-via-uniform.fs">
+      <Filter>Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

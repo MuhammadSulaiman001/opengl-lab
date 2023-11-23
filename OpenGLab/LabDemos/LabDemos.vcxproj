@@ -174,6 +174,8 @@
     <ClCompile Include="src\samples\.constants.cpp" />
     <ClCompile Include="src\samples\FreeCamera.Oop.cpp" />
     <ClCompile Include="src\samples\HelloTexture.Oop.cpp" />
+    <ClCompile Include="src\samples\HelloTexture.Sphere.cpp" />
+    <ClCompile Include="src\samples\HelloTexture.Transparency.cpp" />
     <ClCompile Include="src\samples\HelloTriangle.ProjectionViewModel.cpp" />
     <ClCompile Include="src\samples\FreeCamera.cpp" />
     <ClCompile Include="src\abstraction\Sample.ixx">
@@ -192,15 +194,20 @@
     <ClCompile Include="src\samples\HelloTexture.cpp" />
     <ClCompile Include="src\samples\HelloTriangle.cpp" />
     <ClCompile Include="src\samples\JustGlfwWindow.cpp" />
+    <ClCompile Include="src\samples\Lighting.Phong.cpp" />
     <ClCompile Include="src\samples\OpenFileDialog.cpp" />
     <ClCompile Include="src\samples\RotateByWASD.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
+    <None Include="shaders\fs\accept-color-via-uniform.fs" />
     <None Include="shaders\fs\accept-color.fs" />
+    <None Include="shaders\fs\basic-phong.fs" />
     <None Include="shaders\vs\bypass-color.vs" />
     <None Include="shaders\fs\red.fs" />
     <None Include="shaders\fs\accept-1-texture.fs" />
+    <None Include="shaders\vs\bypass-phong-with-texture.vs" />
+    <None Include="shaders\vs\bypass-phong.vs" />
     <None Include="shaders\vs\bypass-texture.vs" />
     <None Include="shaders\vs\bypass.vs" />
     <None Include="shaders\fs\accept-2-textures.fs" />
@@ -208,16 +215,9 @@
     <None Include="shaders\vs\transform.vs" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="resources\awesomeface.png" />
-    <Image Include="resources\container.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\OpenGL.SharedModule\OpenGL.SharedModule.vcxproj">
       <Project>{9e4005e1-525d-4120-bce4-a70decc26973}</Project>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="resources\cube_pos_tex.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

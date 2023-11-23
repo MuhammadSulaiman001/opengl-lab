@@ -4,12 +4,12 @@
 
 We'll use the most-up-to-date tools to build/develop C++ projects:
 
-1. Install/Update [Visual studio 2022 - Community Edition](https://visualstudio.microsoft.com/downloads/)
+1. Install/Update [Visual studio 2022 - Community Edition](https://visualstudio.microsoft.com/downloads/)[^2] (make sure checkboxes at right panel are checked, especially 'MSVC' and 'Windows 10 SDK')
 
 ![vs2022-installer-workloads](./../res/vs2022-installer-workloads.png)
 
-2. Install/Update CMake [(official site)](https://cmake.org/download/) (use the `.msi`)
-3. Install/Update Git [(official site)](https://git-scm.com/downloads)
+2. Install/Update CMake [(official site)](https://cmake.org/download/) (use the `.msi`, and make sure you install CMake after installing VS, not before),
+3. Install/Update Git [(official site)](https://git-scm.com/downloads),
 4. Install/Update Powershell [(Microsoft Store)](https://apps.microsoft.com/store/detail/powershell/9MZ1SNWT0N5D)
     - Needs VPN (in some countries :thinking:)
     - Or from [GitHub repo](https://github.com/PowerShell/PowerShell/releases)
@@ -17,7 +17,7 @@ We'll use the most-up-to-date tools to build/develop C++ projects:
     * `C:\Program Files\CMake\bin`
     * `C:\Program Files\Git\bin`
 6. Add `msbuild` to PATH,
-    - To find `msbuild.exe`: Open Visual Studio 2022 -> Tools menu -> Command Line -> Developer Command Prompt -> Run `where msbuild` -> copy the path[^2] and add it to PATH
+    - To find `msbuild.exe`: Open Visual Studio 2022 -> Tools menu -> Command Line -> Developer Command Prompt -> Run `where msbuild` -> copy the path[^3] and add it to PATH
     - This allows you to build any `.sln` from command-line (ex. powershell), so you don't have to open the solution (.sln) in VS in order to build the projects (especially if you do clone opensource projects a lot :smile:)
 
 ### Build projects in this repo
@@ -69,6 +69,6 @@ Great, you have built/run many opengl projects, without writing any C++ code (or
     - [Getting started with CMake](https://cmake.org/cmake/help/latest/guide/tutorial/A%20Basic%20Starting%20Point.html)
 
 
-
 [^1]: Please note that the following configuration is not opengl-specific!
-[^2]: There might be 2 paths, one for visual studio and one for .NetFramework, choose the visual studio one.
+[^2]: If you have some other C++ compiler installed (ex. MinGW, CLang, etc..) please uninstall them before installing VS (this will avoid you some CMake errors)
+[^3]: There might be 2 paths, one for visual studio and one for .NetFramework, choose the visual studio one.

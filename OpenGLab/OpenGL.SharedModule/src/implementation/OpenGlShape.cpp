@@ -1,11 +1,12 @@
 // optional #include or import statements. These only apply to this file
 // imports in the associated module's interface are automatically available to this file
 
-#include <stb_image.h>
 #include <stdexcept>
 #include <glad/glad.h>
 #include <glm/glm.hpp>
 #include <vector>
+
+import SharedModule;
 
 module OpenGlShape;
 
@@ -70,27 +71,7 @@ OpenGlTextureShape::OpenGlTextureShape(const vector<glm::vec3>& positions, GLenu
 	// texture attribute
 	glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
 	glEnableVertexAttribArray(1);
-
-	glGenTextures(1, &texture_id_);
-	int width, height, nrChannels;
-	unsigned char* data = stbi_load(texture_path, &width, &height, &nrChannels, 0);
-	GLenum image_format;
-	if (nrChannels == 1)
-		image_format = GL_RED;
-	else if (nrChannels == 3)
-		image_format = GL_RGB;
-	else if (nrChannels == 4)
-		image_format = GL_RGBA;
-	glBindTexture(GL_TEXTURE_2D, texture_id_);
-	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, image_format, GL_UNSIGNED_BYTE, data);
-	glGenerateMipmap(GL_TEXTURE_2D);
-
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-
-	stbi_image_free(data);
+	texture_id_ = load_texture(texture_path);
 }
 
 tuple<vector<glm::vec3>, vector<glm::vec2>> convert_floats_to_vec3_and_vec2(const vector<float>& vertices);

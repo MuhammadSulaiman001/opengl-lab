@@ -62,10 +62,22 @@ export namespace HelloTexture_Oop {
 	int main();
 }
 
+export namespace HelloTexture_Transparency {
+	int main();
+}
+
+export namespace HelloTexture_Sphere {
+	int main();
+}
+
 export namespace FreeCamera {
 	int main();
 }
 
 export namespace FreeCamera_Oop {
+	int main();
+}
+
+export namespace Lighting_Phong {
 	int main();
 }

@@ -85,6 +85,20 @@ vector<std::pair<string, function<int()>>> demos = {
 		},
 	},
 	{
+		"Hello texture - Transparent for real", []()-> int
+		{
+			return HelloTexture_Transparency::main();
+		},
+	},
+	// {
+	// 	// Bug: when reopening the sample nothing gets rendered!
+	// 	// Bug Fix: texture repetition
+	// 	"Hello texture - Sphere", []()-> int
+	// 	{
+	// 		return HelloTexture_Sphere::main();
+	// 	},
+	// },
+	{
 		"Free Camera (minimal code)", []()-> int
 		{
 			return FreeCamera::main();
@@ -94,6 +108,12 @@ vector<std::pair<string, function<int()>>> demos = {
 		"Free Camera (OOP)", []()-> int
 		{
 			return FreeCamera_Oop::main();
+		},
+	},
+	{
+		"Lighting - Phong model", []()-> int
+		{
+			return Lighting_Phong::main();
 		},
 	},
 	// TODO
