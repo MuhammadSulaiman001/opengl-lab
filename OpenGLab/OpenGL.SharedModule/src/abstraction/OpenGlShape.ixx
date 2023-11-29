@@ -11,13 +11,13 @@ export module OpenGlShape;
 
 using namespace std;
 
-// TODO, accept passing VBO in ctor!
+// TODO, accept VBO in ctor!
 export class OpenGlShape
 {
+protected:
+	OpenGlShape(); // using empty ctor is not allowed to be exposed
 	GLenum drawing_mode_;
 	unsigned int number_of_vertices_;
-	OpenGlShape(); //= delete; // using empty ctor is not allowed
-protected:
 	unsigned int VBO_, VAO_;
 
 public:
@@ -30,17 +30,17 @@ public:
 };
 
 // TODO, accept passing VBO in ctor!
-export class OpenGlTextureShape : public OpenGlShape
+export class OpenGlShapeWithTexture : public OpenGlShape
 {
 private:
 	unsigned int texture_id_;
 
 public:
 
-	OpenGlTextureShape(const vector<glm::vec3>&, GLenum,
+	OpenGlShapeWithTexture(const vector<glm::vec3>&, GLenum,
 		const char*, const vector<glm::vec2>&);
-	OpenGlTextureShape(const vector<float>& vertices, GLenum mode,
+	OpenGlShapeWithTexture(const vector<float>& vertices, GLenum mode,
 	const char* texture_path);
-	~OpenGlTextureShape();
+	~OpenGlShapeWithTexture();
 	unsigned int get_texture_id();
 };

@@ -10,74 +10,107 @@ Q: Why export namespaces?
 A: This will make it easy for me to just copy/paste the code from https://github.com/JoeyDeVries/LearnOpenGL samples.. can't do this with classes.
 */
 
-export namespace JustGlfwWindow {
+export namespace JustGlfwWindow
+{
 	int main();
 }
 
-export namespace GlfwWindowWithButton {
+export namespace GlfwWindowWithButton
+{
 	int main();
 }
 
-export namespace OpenFileDialog {
+export namespace OpenFileDialog
+{
 	int main();
 }
 
-export namespace HelloTriangle {
+export namespace HelloTriangle
+{
 	int main();
 }
 
-export namespace HelloTriangle_Oop {
+export namespace HelloTriangle_Oop
+{
 	int main();
 }
 
-export namespace HelloTriangle_ProjectionViewModel {
+export namespace HelloTriangle_ProjectionViewModel
+{
 	int main();
 }
 
-export namespace HelloTriangle_Perspective {
+export namespace HelloTriangle_Perspective
+{
 	int main();
 }
 
-export namespace HelloTriangle_Ortho {
+export namespace HelloTriangle_Ortho
+{
 	int main();
 }
 
-export namespace RotateByWASD {
+export namespace RotateByWASD
+{
 	int main();
 }
 
-export namespace HelloPrimitives {
+export namespace HelloPrimitives
+{
 	int main();
 }
 
-export namespace CircleVsDisk {
+export namespace CircleVsDisk
+{
 	int main();
 }
 
-export namespace HelloTexture {
+export namespace HelloTexture
+{
 	int main();
 }
 
-export namespace HelloTexture_Oop {
+export namespace HelloTexture_Oop
+{
 	int main();
 }
 
-export namespace HelloTexture_Transparency {
+export namespace HelloTexture_Transparency
+{
 	int main();
 }
 
-export namespace HelloTexture_Sphere {
+export namespace HelloTexture_Sphere
+{
 	int main();
 }
 
-export namespace FreeCamera {
+export namespace FreeCamera
+{
 	int main();
 }
 
-export namespace FreeCamera_Oop {
+export namespace FreeCamera_Oop
+{
 	int main();
 }
 
-export namespace Lighting_Phong {
+export namespace Lighting_Phong
+{
+	int main();
+}
+
+export namespace HelloModel 
+{
+	int main();
+}
+
+export namespace One_VAO_Two_Textures
+{
+	int main();
+}
+
+export namespace Combine_Textures
+{
 	int main();
 }

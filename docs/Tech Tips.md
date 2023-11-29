@@ -104,14 +104,30 @@ These are some extensions to install in Visual Studio
         - Properties -> Linker -> Input = add file-name.obj
         - **Refer to `UnitTests` project to see an example of how I've tested `DxfParser` methods that are declared and defined in `Homework.OpenGlDxfViewer` application**
 
+### Install assimp (manually)
+
+- Check prebuild-binaries at [assimp repo](https://github.com/assimp/assimp)
+    - Itchi Projectspace
+- Download x64 exe, install it (note the installation location)
+- Go to installation location, 
+    - .h files in include folder
+    - .lib file in lib\x64
+    - .dll file in bin\x64
+- [assimp models database](https://github.com/assimp/assimp-mdb)
+
 ### Misc. Tips
 
 - In solution explorer, select the project you're working on, toggle ON "Show all files", this will show the actual folders on desk, rather than solution filters, so you can organize the files better!
 - While developing, be aware configs are set to Debug, not Release
-- Exclude-from-build note in legacyDemo (might be LegacyDemos)??
 - When creating new project in Visual Studio, don't create the project and the solution at the same level (there is a checkbox that asks you if you want to do that!)
 - If there is, for some reasone, more than one entry point in the application (ex. 2 cpp files, each has a main function), then you must exclude one file from build..
     - File properties -> exclude from build = Yes
 - To run project without set it as startup: Right click -> debug -> run instance.
 - Rebuild the project after writing code in shader's file..
+- > Access violation executing location ...
+    - common crash
+    - check if `gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);` missing!
+- 3d model-loading speed can be enhanced in release Configuration.
+- In Visual Studio, when the build fails with a huge stacktrace, you can check the name of the .cpp file that is mentioned just before the first error.. That would be the file that causes the build to fail!
+- In visual studio, you can exclude .cpp file from the build by right click -> properties -> exclude from build = Yes.
 - 

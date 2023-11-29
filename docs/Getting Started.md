@@ -13,12 +13,16 @@ We'll use the most-up-to-date tools to build/develop C++ projects:
 4. Install/Update Powershell [(Microsoft Store)](https://apps.microsoft.com/store/detail/powershell/9MZ1SNWT0N5D)
     - Needs VPN (in some countries :thinking:)
     - Or from [GitHub repo](https://github.com/PowerShell/PowerShell/releases)
-5. Add `cmake` and `git` to PATH environmental variable (at top of the list), these are the default paths
-    * `C:\Program Files\CMake\bin`
+5. Add `cmake` and `git` to PATH environmental variable (for system, not for user), these are the default paths
+    * `C:\Program Files\CMake\bin` (at top of the list),
     * `C:\Program Files\Git\bin`
 6. Add `msbuild` to PATH,
     - To find `msbuild.exe`: Open Visual Studio 2022 -> Tools menu -> Command Line -> Developer Command Prompt -> Run `where msbuild` -> copy the path[^3] and add it to PATH
     - This allows you to build any `.sln` from command-line (ex. powershell), so you don't have to open the solution (.sln) in VS in order to build the projects (especially if you do clone opensource projects a lot :smile:)
+7. NOTES:
+    - In some cases, after pwsh.exe is not recognized by cmd.. to verify, open cmd, type `pwsh --version`, if you got an error message, open windows start menu -> pwsh -> open file location -> copy the location and add it to PATH (see next step)
+    - When changing PATH entries, you should restart open sessions (restart visual studio if opened, restart powershell if opened)
+
 
 ### Build projects in this repo
 

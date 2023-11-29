@@ -11,5 +11,5 @@ export class Drawer
 {
 public:
     void draw(OpenGlShape&);
-    void draw(OpenGlTextureShape&);
+    void draw(OpenGlShapeWithTexture&);
 };

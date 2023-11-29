@@ -19,12 +19,6 @@ vector<std::pair<string, function<int()>>> demos = {
 		},
 	},
 	{
-		"File Picker (A.K.A OpenFileDialog)", []()-> int
-		{
-			return OpenFileDialog::main();
-		},
-	},
-	{
 		"Show triangle (minimal code)", []()-> int
 		{
 			return HelloTriangle::main();
@@ -90,14 +84,18 @@ vector<std::pair<string, function<int()>>> demos = {
 			return HelloTexture_Transparency::main();
 		},
 	},
-	// {
-	// 	// Bug: when reopening the sample nothing gets rendered!
-	// 	// Bug Fix: texture repetition
-	// 	"Hello texture - Sphere", []()-> int
-	// 	{
-	// 		return HelloTexture_Sphere::main();
-	// 	},
-	// },
+	{
+		"One VAO, Two textures", []()-> int
+		{
+			return One_VAO_Two_Textures::main();
+		},
+	},
+	{
+		"Combine Textures", []()-> int
+		{
+			return Combine_Textures::main();
+		},
+	},
 	{
 		"Free Camera (minimal code)", []()-> int
 		{
@@ -116,11 +114,40 @@ vector<std::pair<string, function<int()>>> demos = {
 			return Lighting_Phong::main();
 		},
 	},
+	// TODO: loading the model causes the textures in demos 12/13 to not load correctly!!
+	// {
+	// 	"Hello Model", []()-> int
+	// 	{
+	// 		return HelloModel::main();
+	// 	},
+	// },
 	// TODO
 	// {
-	// 	"Combine Textures", []()-> int
+	// 	"Blending", []()-> int
 	// 	{
 	// 		throw NotImplementedException();
+	// 	},
+	// },
+	// TODO
+	// {
+	// 	"Hello SkyBox", []()-> int
+	// 	{
+	// 		throw NotImplementedException();
+	// 	},
+	// },
+	// {
+	// 	// Bug: when reopening the sample nothing gets rendered!
+	// 	// Bug Fix: texture repetition
+	// 	"Hello texture - Sphere", []()-> int
+	// 	{
+	// 		return HelloTexture_Sphere::main();
+	// 	},
+	// },
+	// todo: revisit https://github.com/MuhammadSulaiman001/opengl-lab/discussions/17
+	// {
+	// 	"File Picker (A.K.A OpenFileDialog)", []()-> int
+	// 	{
+	// 		return OpenFileDialog::main();
 	// 	},
 	// },
 	// TODO

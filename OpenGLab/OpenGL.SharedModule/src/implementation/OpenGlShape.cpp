@@ -12,6 +12,10 @@ module OpenGlShape;
 
 using namespace std;
 
+OpenGlShape::OpenGlShape()
+{
+}
+
 OpenGlShape::OpenGlShape(const vector<glm::vec3>& vertices, GLenum drawing_mode)
 	: number_of_vertices_(vertices.size()), drawing_mode_(drawing_mode)
 {
@@ -47,10 +51,12 @@ struct Vertex
 	glm::vec2 texture_coords;
 };
 
-OpenGlTextureShape::OpenGlTextureShape(const vector<glm::vec3>& positions, GLenum mode,
+OpenGlShapeWithTexture::OpenGlShapeWithTexture(const vector<glm::vec3>& positions, GLenum mode,
                                        const char* texture_path, const vector<glm::vec2>& texture_coords)
-	: OpenGlShape(positions, mode)
+	                                       : OpenGlShape()
 {
+	number_of_vertices_ = positions.size();
+	drawing_mode_ = mode;
 	if (positions.size() != texture_coords.size())
 	{
 		throw exception("positions list and coords list should have the same count of data!");
@@ -76,19 +82,19 @@ OpenGlTextureShape::OpenGlTextureShape(const vector<glm::vec3>& positions, GLenu
 
 tuple<vector<glm::vec3>, vector<glm::vec2>> convert_floats_to_vec3_and_vec2(const vector<float>& vertices);
 
-OpenGlTextureShape::OpenGlTextureShape(const vector<float>& vertices, GLenum mode,
+OpenGlShapeWithTexture::OpenGlShapeWithTexture(const vector<float>& vertices, GLenum mode,
                                        const char* texture_path)
-	: OpenGlTextureShape(get<0>(convert_floats_to_vec3_and_vec2(vertices)), mode,
+	: OpenGlShapeWithTexture(get<0>(convert_floats_to_vec3_and_vec2(vertices)), mode,
 	                     texture_path, get<1>(convert_floats_to_vec3_and_vec2(vertices)))
 {
 }
 
-OpenGlTextureShape::~OpenGlTextureShape()
+OpenGlShapeWithTexture::~OpenGlShapeWithTexture()
 {
 	glDeleteTextures(1, &texture_id_);
 }
 
-unsigned int OpenGlTextureShape::get_texture_id()
+unsigned int OpenGlShapeWithTexture::get_texture_id()
 {
 	return texture_id_;
 }

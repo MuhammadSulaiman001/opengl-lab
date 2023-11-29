@@ -53,7 +53,7 @@ namespace HelloTexture_Transparency
 
 		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-		OpenGlTextureShape shape(positions, GL_TRIANGLE_FAN, "./resources/awesomeface.png", texture_coords);
+		OpenGlShapeWithTexture shape(positions, GL_TRIANGLE_FAN, "./resources/awesomeface.png", texture_coords);
 
 		while (!glfwWindowShouldClose(window))
 		{

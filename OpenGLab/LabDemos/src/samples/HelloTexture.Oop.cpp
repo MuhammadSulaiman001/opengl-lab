@@ -44,7 +44,7 @@ namespace HelloTexture_Oop
 			glm::vec2(0.0f, 1.0f)
 		};
 
-		OpenGlTextureShape shape(positions, GL_TRIANGLE_FAN, "./resources/container.jpg", texture_coords);
+		OpenGlShapeWithTexture shape(positions, GL_TRIANGLE_FAN, "./resources/container.jpg", texture_coords);
 
 		while (!glfwWindowShouldClose(window))
 		{

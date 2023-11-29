@@ -44,7 +44,7 @@ int main(int argc, char* argv[])
 
 Notes[^4]:
 
-- You **must** Implement the game in [Homework.Puzzle.SlidingNumber](./../Homework.Puzzle.SlidingNumber) project (legacy OpengGL API is allowed),
+- You **must** Implement the game in [Homework.Puzzle.SlidingNumber](./) project (legacy OpengGL API is allowed),
 - Each student **must** attend the lab with the group he/she belongs to,
 - **4th/5th-year students** are free to attend with any group, but **must** deliver the same homework given to that group,
 - Source code should be submitted one day before the interviews (a link will be provided in the discussion),

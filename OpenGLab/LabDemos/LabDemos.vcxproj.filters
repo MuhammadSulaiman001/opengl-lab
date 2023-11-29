@@ -73,6 +73,15 @@
     <ClCompile Include="src\samples\HelloTexture.Sphere.cpp">
       <Filter>Samples</Filter>
     </ClCompile>
+    <ClCompile Include="src\samples\HelloModel.cpp">
+      <Filter>Samples</Filter>
+    </ClCompile>
+    <ClCompile Include="src\samples\One-VAO-Two-Textures.cpp">
+      <Filter>Samples</Filter>
+    </ClCompile>
+    <ClCompile Include="src\samples\CombineTextures.cpp">
+      <Filter>Samples</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="shaders\fs\accept-2-textures.fs">

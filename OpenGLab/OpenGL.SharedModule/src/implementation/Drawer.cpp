@@ -12,7 +12,7 @@ void Drawer::draw(OpenGlShape& shape)
 	glDrawArrays(shape.get_drawing_mode(), 0, shape.get_number_of_vertices());
 	glBindVertexArray(0);
 }
-void Drawer::draw(OpenGlTextureShape& shape)
+void Drawer::draw(OpenGlShapeWithTexture& shape)
 {
 	glBindTexture(GL_TEXTURE_2D, shape.get_texture_id());
 	glBindVertexArray(shape.get_vao());
