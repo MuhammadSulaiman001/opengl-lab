@@ -49,8 +49,7 @@ git clone https://github.com/JoeyDeVries/LearnOpenGL
 cd LearnOpenGL
 mkdir build && cd build # create/move to build directory
 cmake .. # build the build system :)
-cmake --build . # build all the projects, might take few minutes!
-# cmake --build . --target 1.getting_started__2.1.hello_triangle # builds only this target
+msbuild LearnOpenGL.sln # It took 4 minutes on my device to build all the projects
 cd ..\bin # move to output location
 explorer . # open in windows explorer!
 # now, you can check project's output, run .exe files
