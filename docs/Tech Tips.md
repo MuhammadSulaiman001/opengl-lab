@@ -1,4 +1,5 @@
 ## Good-To-Have Tools
+- Install [GPUpad](https://github.com/houmain/gpupad) shader IDE and editor.
 - Install/Upgrade Terminal [(From Microsoft Store)](https://apps.microsoft.com/detail/windows-terminal/9N0DX20HK701?hl=en-US)
     - Configure the *settings* to: 
         - Make "Terminal" the default terminal in windows,
