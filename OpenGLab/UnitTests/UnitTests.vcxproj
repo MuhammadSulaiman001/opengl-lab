@@ -84,7 +84,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <AdditionalLibraryDirectories>..\OpenGL.SharedModule\dependencies\libs;..\Homework.OpenGlDxfViewer\$(Platform)\$(Configuration)\Temp;</AdditionalLibraryDirectories>
-      <AdditionalDependencies>spdlogd.lib;DxfParser.obj;dxfrw.lib;dx_interface.obj;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>spdlog.lib;DxfParser.obj;dxfrw.lib;dx_interface.obj;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

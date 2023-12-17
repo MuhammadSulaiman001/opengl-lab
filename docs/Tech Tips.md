@@ -6,13 +6,7 @@
         - Make powershell 7.3.x the default terminal, 
         - Run as administrator, 
         - Run at startup.
-- Install/Upgrade `make` using [choco](https://www.gnu.org/software/make/), 
-    - Open Powershell 7,
-    - `choco upgrade chocolatey` # optional
-    - `choco upgrade all` # optional
-    - `choco list` # see all packages installed by choco
-    - **`choco install make` # install make**
-    - `choco upgrade make` # upgrade make
+- Install/Upgrade `make` from [here](https://gnuwin32.sourceforge.net/packages/make.htm) and add it to PATH, or using [choco](https://www.gnu.org/software/make/) (if you use it!)
 - **We won't use [vcpkg](https://vcpkg.io/)** during this course.
 
 ## `.vcxproj` setup (best practices)
