@@ -2,6 +2,8 @@ A collection of important libraries and good tutorials for both OpenGL and C++, 
 
 ### Awesome OpenGL dependencies:
 - [glfw](https://github.com/glfw/glfw): Create game window and get user input
+    - [SFML](https://github.com/SFML/SFML/blob/master/examples/opengl/OpenGL.cpp)
+    - [Freeglut](https://github.com/freeglut/freeglut)
 - [glad](https://github.com/Dav1dde/glad): OpenGL loader
     - alternatives: [glew](https://github.com/nigels-com/glew), [gl3w](https://github.com/skaslev/gl3w)
 - [stb](https://github.com/nothings/stb/): image loader, etc...
