@@ -43,7 +43,7 @@ Now, you can find the build output inside project folder (ex. `LabDemos.exe` can
 ```
 cmake --version # verify cmake is installed
 git --version # verify git is installed
-cd ~\desktop\opensource
+cd ~\desktop
 mkdir opensource && cd opensource
 git clone https://github.com/JoeyDeVries/LearnOpenGL
 cd LearnOpenGL
