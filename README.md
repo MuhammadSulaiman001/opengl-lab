@@ -12,5 +12,5 @@
 To get notifications about new discussions, open `Watch` dropdown at github repo, select `All Activity`
 
 
-[^1]: work in progress...
-[^2]: All 3ed-party libraries are bundled within this repo (code for 2023-2024 can be found on `master-2024` branch)
+[^1]: work in progress... code for 2023-2024 can be found on `master-2024` branch
+[^2]: All 3ed-party libraries will be bundled within this repo
