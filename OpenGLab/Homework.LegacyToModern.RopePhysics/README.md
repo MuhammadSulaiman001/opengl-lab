@@ -1,1 +1,0 @@
-Convert [Lesson 40](https://github.com/gamedev-net/nehe-opengl/tree/master/vc/Lesson40) to modern OpenGL.

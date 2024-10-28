@@ -20,21 +20,6 @@ When creating new project in Visual Studio, configure project properties -> Gene
     - Output Directory: `$(ProjectDir)$(Platform)\$(Configuration)`
     - Temp Directory: `$(ProjectDir)$(Platform)\$(Configuration)\Temp`
     
-## Coding
-
-- Don't just put .cpp, .h, etc.. files at project root, keep things organized as much as possible (check projects in this repo as an example),
-- Clean code principles and best practices:
-    - DRY
-    - KISS
-    - SOLID
-    - YAGNI
-    - etc...
-
-## Package manager
-
-- We won't use [vcpkg](https://vcpkg.io/) during this course, in order to make sure all dependencies are bundled within the project(s) (under git supervision),
-- Anyway, triggering package managers (like vcpkg) to install project dependencies on any machine is possible, but out of the scope of this course.
-
 ## Consuming libraries
 
 Libaries can be found in different flavors, the common ones are:
@@ -57,9 +42,9 @@ Libaries can be found in different flavors, the common ones are:
 5. To Consume dll files:
     - Project properties -> Build Events -> Post-Build-Event
     - Trigger powershell to execute a .ps1 script that copies the dlls to output directory (recommended)
-        - Check `LabDemos` project to see an example
+        - Check `LabDemos` project to see an example (master-2024 branch)
     - Or: add `xcopy` command to copy the dlls to output directory
-        - Check `LegacyDemo.Yuck` project to see an example
+        - Check `LegacyDemo.Yuck` project to see an example (master-2024 branch)
 
 ### So, If you want to install a library that is shared between many projects (ex. spdlog, glm, etc...), where to put these files?
 
@@ -81,6 +66,22 @@ Libaries can be found in different flavors, the common ones are:
     - Use Post-Build-Event to copy the needed resources (ex. images, shaders, dlls, etc...) to build output directory,
     - Recommended: let the event call .ps1 script, which will run one/more commands.
     - [Optional]: Use packaging projects like NSIS, InnoSetup, etc... to create .exe/.msi installers.
+
+## Coding
+
+- Don't just put .cpp, .h, etc.. files at project root, keep things organized as much as possible (check projects in this repo as an example),
+- Clean code principles and best practices:
+    - DRY
+    - KISS
+    - SOLID
+    - YAGNI
+    - etc...
+
+## Package manager
+
+- We won't use [vcpkg](https://vcpkg.io/) during this course, in order to make sure all dependencies are bundled within the project(s) (under git supervision),
+- Anyway, triggering package managers (like vcpkg) to install project dependencies on any machine is possible, but out of the scope of this course.
+
 
 ### VS Extensions 
 

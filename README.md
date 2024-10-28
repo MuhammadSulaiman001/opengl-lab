@@ -1,4 +1,4 @@
-# OpenGL-Lab (2023-2024)[^1]
+# OpenGL-Lab (2024-2025)[^1]
 
 ## Index
 
@@ -13,4 +13,4 @@ To get notifications about new discussions, open `Watch` dropdown at github repo
 
 
 [^1]: work in progress...
-[^2]: All 3ed-party libraries are bundled within this repo
+[^2]: All 3ed-party libraries are bundled within this repo (code for 2023-2024 can be found on `master-2024` branch)
