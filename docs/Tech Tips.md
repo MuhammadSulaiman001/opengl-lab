@@ -18,7 +18,7 @@ When creating new project in Visual Studio, configure project properties -> Gene
 - Output/Temp Directories:
     - The default location is at **.sln level**, so all projects will dump their output in one place! I don't like this, Let's isolate the build output for each project to be at **.cxproj level**
     - Output Directory: `$(ProjectDir)$(Platform)\$(Configuration)`
-    - Temp Directory: `$(ProjectDir)$(Platform)\$(Configuration)\Temp`
+    - Temp Directory: `$(ProjectDir)$(Platform)\Temp-$(Configuration)`
     
 ## Consuming libraries
 
