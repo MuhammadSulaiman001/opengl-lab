@@ -19,6 +19,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{1E384A81-7
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpp-project", "cpp-project\cpp-project.vcxproj", "{B8BA8783-C8DD-45EA-99A7-A8BE61CFE8D8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hello-triangle", "hello-triangle\hello-triangle.vcxproj", "{69774ED9-7FB2-4ABC-B3C8-FC12182F8471}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -35,6 +37,14 @@ Global
 		{B8BA8783-C8DD-45EA-99A7-A8BE61CFE8D8}.Release|x64.Build.0 = Release|x64
 		{B8BA8783-C8DD-45EA-99A7-A8BE61CFE8D8}.Release|x86.ActiveCfg = Release|Win32
 		{B8BA8783-C8DD-45EA-99A7-A8BE61CFE8D8}.Release|x86.Build.0 = Release|Win32
+		{69774ED9-7FB2-4ABC-B3C8-FC12182F8471}.Debug|x64.ActiveCfg = Debug|x64
+		{69774ED9-7FB2-4ABC-B3C8-FC12182F8471}.Debug|x64.Build.0 = Debug|x64
+		{69774ED9-7FB2-4ABC-B3C8-FC12182F8471}.Debug|x86.ActiveCfg = Debug|Win32
+		{69774ED9-7FB2-4ABC-B3C8-FC12182F8471}.Debug|x86.Build.0 = Debug|Win32
+		{69774ED9-7FB2-4ABC-B3C8-FC12182F8471}.Release|x64.ActiveCfg = Release|x64
+		{69774ED9-7FB2-4ABC-B3C8-FC12182F8471}.Release|x64.Build.0 = Release|x64
+		{69774ED9-7FB2-4ABC-B3C8-FC12182F8471}.Release|x86.ActiveCfg = Release|Win32
+		{69774ED9-7FB2-4ABC-B3C8-FC12182F8471}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
