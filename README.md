@@ -1,5 +1,7 @@
 # OpenGL-Lab (2024-2025)[^1]
 
+Slides for this tutorial can be found [here](https://drive.google.com/drive/folders/1hMN3ZXig-5MrOfSFMB7LUqftWKyESV5K?usp=sharing).
+
 ## Index
 
 - [Getting Started](./docs/Getting&#32;Started.md)
