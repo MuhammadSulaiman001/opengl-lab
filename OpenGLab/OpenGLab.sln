@@ -14,12 +14,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{1E384A81-7
 		README.md = README.md
 		..\README.md = ..\README.md
 		..\docs\Tech Tips.md = ..\docs\Tech Tips.md
-		docs\TODOs.txt = docs\TODOs.txt
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpp-project", "cpp-project\cpp-project.vcxproj", "{B8BA8783-C8DD-45EA-99A7-A8BE61CFE8D8}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hello-triangle", "hello-triangle\hello-triangle.vcxproj", "{69774ED9-7FB2-4ABC-B3C8-FC12182F8471}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "homeworks-2025", "homeworks-2025", "{BA4F4160-8937-417C-8D99-86E197FBB2E8}"
+	ProjectSection(SolutionItems) = preProject
+		..\homeworks-2025\15-16.md = ..\homeworks-2025\15-16.md
+		..\homeworks-2025\23-24.md = ..\homeworks-2025\23-24.md
+		..\homeworks-2025\7-8.md = ..\homeworks-2025\7-8.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
